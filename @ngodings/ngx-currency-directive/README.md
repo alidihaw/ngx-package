@@ -10,7 +10,7 @@ If you like this package I will be happy that you support buying coffee for me :
 
 Buy me coffe: [https://www.buymeacoffee.com/alidihaw](https://www.buymeacoffee.com/alidihaw)
 
-[![buycoffe][https://raw.githubusercontent.com/alidihaw/ngodings/master/%40ngodings/ngx-currency-directive/public/coffee.png](https://www.buymeacoffee.com/alidihaw)
+[![buycoffe](https://raw.githubusercontent.com/alidihaw/ngodings/master/%40ngodings/ngx-currency-directive/public/coffee.png)(https://www.buymeacoffee.com/alidihaw)
 
 
 ## About
