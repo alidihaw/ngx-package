@@ -77,6 +77,7 @@
             </ng-container>
             <div class="">
               <div class="name">{{ tag.name }}</div>
+              <div *ngIf="isShowPrice" class="mt-2 price" >{{ tag.price | currency:'USD' }}</div>
               <div *ngIf="isShowLink" class="link mt-2 pointer" (click)="goToTag(tag)">Go to link</div>
             </div>
           </div>

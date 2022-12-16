@@ -74,8 +74,8 @@ ngx-image-tagger {
 
   .thumnbnail {
     img {
-      width: 50px !important;
-      height: 50px !important;
+      width: 54px !important;
+      height: 54px !important;
       border-radius: 6px;
     }
   }
@@ -204,6 +204,12 @@ ngx-image-tagger {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+      }
+      .price {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 10px;
       }
 
       .link {

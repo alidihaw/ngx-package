@@ -1,3 +1,4 @@
+import { CurrencyPipe } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -13,7 +14,9 @@ import { NgxImageTaggerComponent } from './ngx-image-tagger.component';
     FormsModule,
     NgxCurrencyModule,
   ],
-  providers: [],
+  providers: [
+    CurrencyPipe,
+  ],
   exports: [
     NgxImageTaggerComponent
   ]

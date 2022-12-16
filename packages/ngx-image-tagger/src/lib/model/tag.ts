@@ -2,7 +2,6 @@ export interface Tagged {
     id: string;
     name?: string;
     url?: string;
-    priceCurrency?: string;
     price?: number;
     x: number;
     y: number;

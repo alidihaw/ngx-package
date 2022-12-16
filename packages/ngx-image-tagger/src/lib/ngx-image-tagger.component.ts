@@ -168,6 +168,7 @@ export class NgxImageTaggerComponent implements OnInit {
       item.tags.push({
         id: "", name: this.form.name, url: this.form.url, x: item.x!, y: item.y!, isOffsideX, isOffsideY,
         open: false,
+        price: this.form.price,
         tagger: Object.assign(this.tagger),
       });
       this.resetTag();
