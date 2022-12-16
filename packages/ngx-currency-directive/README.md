@@ -2,7 +2,7 @@
 
 ## Demo - Angular v15
 
-https://nbfontana.github.io/ngx-currency/
+https://ngodings.com
 
 ## Support Me
 
@@ -18,13 +18,13 @@ Buy me coffe: [https://www.buymeacoffee.com/alidihaw](https://www.buymeacoffee.c
 Install the package by command:
 
 ```sh
-    npm install ngx-currency --save
+    npm install @ngodings/ngx-currency-directive --save
 ```
 
 Import the module
 
 ```ts
-import { NgxCurrencyModule } from "ngx-currency";
+import { NgxCurrencyModule } from "@ngodings/ngx-currency-directive";
 
 @NgModule({
     imports: [
