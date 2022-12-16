@@ -1,0 +1,44 @@
+<button class="btn normal-case"
+    [class.btn-primary]="colorValue === 'primary'" 
+    [class.btn-secondary]="colorValue === 'secondary'" 
+    [class.btn-accent]="colorValue === 'accent'" 
+    [class.btn-ghost]="colorValue === 'ghost'" 
+    [class.btn-link]="colorValue === 'link'" 
+    [class.btn-info]="colorValue === 'info'" 
+    [class.btn-success]="colorValue === 'success'" 
+    [class.btn-warning]="colorValue === 'warning'" 
+    [class.btn-error]="colorValue === 'error'" 
+    [class.btn-sm]="sizeValue === 'sm'" 
+    [class.btn-md]="sizeValue === 'md'" 
+    [class.btn-lg]="sizeValue === 'lg'" 
+    [class.btn-active]="isActive" 
+    [class.btn-outline]="isOutline"
+    [class.btn-wide]="isWide"
+    [class.btn-square]="isSquare"
+    [class.btn-circle]="isCircle"
+    [class.btn-disabled]="isDisabled"
+    [class.btn-block]="isFull"
+    [class.loading]="isLoading"
+    [class.rounded-lg]="isRounded"
+    [class.gap-2]="iconLeft || iconRight"
+    (click)="onCallback()"
+    [attr.aria-label]="title !== '' ? title : 'button'"
+>
+    <div class="flex items-center">
+        <ng-container *ngIf="imageLeft">
+            <img loading="lazy" [src]="imageLeft" class="image pr-2" alt="button-img">
+        </ng-container>
+        <ng-container *ngIf="iconLeft">
+            <i class="material-icons pr-2">{{ iconLeft }}</i>
+        </ng-container>
+        <ng-container *ngIf="title">
+            {{ title }} 
+        </ng-container>
+        <ng-container *ngIf="imageRight">
+            <img loading="lazy" [src]="imageRight" class="image pl-2" alt="button-img">
+        </ng-container>
+        <ng-container *ngIf="iconRight">
+            <i class="material-icons pl-2">{{ iconRight }}</i>
+        </ng-container>
+    </div>
+</button>

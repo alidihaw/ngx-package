@@ -17,7 +17,17 @@
       ],
       "ngx-image-tagger": [
         "dist/ngx-image-tagger"
-      ]
+      ],
+      "@providers/*": ["src/app/providers/*"],
+      "@directives/*": ["src/app/directives/*"],
+      "@modules/*": ["src/app/modules/*"],
+      "@components/*": ["src/app/components/*"],
+      "@guards/*": ["src/app/guards/*"],
+      "@shareds/*": ["src/app/shareds/*"],
+      "@environments/*": ["src/environments/*"],
+      "@models/*": ["src/app/models/*"],
+      "@layouts/*": ["src/app/layouts/*"],
+      "@sections/*": ["src/app/sections/*"],
     },
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
@@ -33,7 +43,7 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

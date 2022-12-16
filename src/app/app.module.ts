@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgxCurrencyModule } from 'packages/ngx-currency-directive/src/public-api';
-import { NgxImageTaggerModule } from 'packages/ngx-image-tagger/src/public-api';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavbarModule } from '@layouts/navbar/navbar.module';
+import { FooterModule } from '@layouts/footer/footer.module';
+import { CopyrightModule } from '@layouts/copyright/copyright.module';
 
 @NgModule({
   declarations: [
@@ -14,11 +15,11 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
 
-    NgxImageTaggerModule,
-
-    FormsModule,
-    NgxCurrencyModule,
+    NavbarModule,
+    FooterModule,
+    CopyrightModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

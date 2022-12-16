@@ -6,7 +6,7 @@ https://ngodings.com
 
 ## Support Me
 
-If you like this package I will be happy that you support buying coffee for me :) <br />
+If you like this package I will be happy that you support me on Buy me a coffee :) <br />
 Buy me coffe: [https://www.buymeacoffee.com/alidihaw](https://www.buymeacoffee.com/alidihaw)
 
 ## About

@@ -1,0 +1,17 @@
+app-copyright {
+    .copyright {
+        border-top: 1px solid hsl(var(--sf));
+    }
+
+    .social-media {
+        img {
+            height: 36px;
+        }
+    }
+    .follow {
+        margin-top: 20px;
+        img {
+            height: 36px;
+        }
+    }
+}

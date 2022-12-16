@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TaggerModel } from 'packages/ngx-image-tagger/src/lib/model/tag';
+import { AppData } from './app.data';
 
 @Component({
   selector: 'app-root',
@@ -7,13 +7,7 @@ import { TaggerModel } from 'packages/ngx-image-tagger/src/lib/model/tag';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  tagger: TaggerModel = {
-    idParent: 'ngx-image-tagger-parent-1',
-    id: 'ngx-image-tagger-1',
-    url: 'https://picsum.photos/id/7/400/500',
-    urlShop: 'https://shopee.co.id/',
-    tags: []
-  }
+  constructor(public appData: AppData,) {
 
-  price = 0;
+  }
 }

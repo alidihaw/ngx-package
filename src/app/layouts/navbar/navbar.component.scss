@@ -1,0 +1,139 @@
+@keyframes fadeInDown {
+    0% {
+       opacity: 0;
+       transform: translateY(-20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+} 
+
+app-navbar {
+    .btn-humberger {
+
+    }
+    
+    ul {
+        li {
+            border-radius: 2px !important;
+            div {
+                border-radius: 2px !important;
+            }
+        }
+    }
+    .submenu {
+        background-color: #FFF;
+        ul {
+            // background-color: #000;
+        }
+    }
+
+
+    .navbar {
+        background-color: transparent !important;
+        position: absolute;
+        color: white !important;
+        z-index: 100;
+        width: 100vw;
+        a:hover { 
+            background-color: transparent;
+            color: rgb(240, 240, 240);
+        }
+
+        .menu-mobile {
+            li {
+                div {
+                    background-color: transparent;
+                    color: black;
+                }
+            }
+            a:hover { 
+                background-color: transparent;
+                color: hsl(var(--pf));
+            }
+        }
+    }
+
+    .submenu {
+        border-radius: 2px !important;
+        li {
+            div {
+                background-color: transparent;
+                color: black;
+            }
+        }
+        a:hover {
+            background-color: white;
+            color: hsl(var(--pf));
+        }
+    }
+    
+    .submenu-item {
+        padding-left: 25px;
+    }
+
+    .submenu-item:hover {
+        background-color: white;
+    }
+
+    .navbar-scroll {
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+        border-bottom: 1px solid #f5f5f5;
+        animation: .5s ease-in-out 0s normal none 1 running fadeInDown;
+        background: white !important;
+    }
+
+    .navbar-inverse {
+        position: fixed;
+        color: black;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+        li {
+            div {
+                background-color: transparent;
+                color: black;
+            }
+        }
+        a:hover {
+            background-color: transparent;
+            color: hsl(var(--pf));
+        }
+    }
+
+    @media (min-width:320px)  { 
+        /* smartphones, iPhone, portrait 480x320 phones */
+        .logo {
+            height: 20px;
+        }
+     }
+    @media (min-width:481px)  { 
+        /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+        .logo {
+            height: 20px;
+        }
+     }
+    @media (min-width:641px)  { 
+        /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+        .logo {
+            height: 30px;
+        }
+     }
+    @media (min-width:961px)  { 
+        /* tablet, landscape iPad, lo-res laptops ands desktops */
+        .logo {
+             height: 30px;
+        }
+     }
+    @media (min-width:1025px) { 
+        /* big landscape tablets, laptops, and desktops */
+        .logo {
+            height: 30px;
+        }
+     }
+    @media (min-width:1281px) { 
+        /* hi-res laptops and desktops */
+        .logo {
+            height: 30px;
+        }
+    }
+}

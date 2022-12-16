@@ -1,8 +1,10 @@
-<ngx-image-tagger 
-    [tagger]="tagger" 
-    [isAllowCreate]="true"
-    [isShowLink]="true"
-    [isShowPrice]="true"
-    [isShowShop]="true"
->
-</ngx-image-tagger>
+<div [attr.data-theme]="appData.theme | lowercase">
+  <div class="layout">
+    <app-navbar></app-navbar>
+
+    <router-outlet></router-outlet>
+  </div>
+
+  <app-footer></app-footer>
+  <app-copyright></app-copyright>
+</div>
