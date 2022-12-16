@@ -1,0 +1,13 @@
+{
+  "name": "@ngodings/ngx-image-tagger",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^15.0.0",
+    "@angular/core": "^15.0.0"
+  },
+  "dependencies": {
+    "@ngodings/ngx-currency-directive": "^0.0.1",
+    "material-icons": "^1.13.1",
+    "tslib": "^2.3.0"
+  }
+}
