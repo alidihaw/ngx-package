@@ -1,10 +1,11 @@
 {
   "name": "@ngodings/ngx-currency-directive",
-  "version": "0.0.4",
+  "version": "0.0.11",
   "peerDependencies": {
     "@angular/common": "^15.0.0",
     "@angular/core": "^15.0.0"
   },
+  "license": "MIT",
   "dependencies": {
     "tslib": "^2.3.0"
   },
@@ -12,5 +13,18 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/alidihaw/ngodings/tree/master/%40ngodings/ngx-currency-directive"
-  }
+  },
+  "keywords": [
+    "angular",
+    "angular2",
+    "angular4",
+    "angular9",
+    "angular15",
+    "currency",
+    "mask",
+    "model",
+    "money",
+    "ngx",
+    "number"
+  ]
 }
