@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TaggerModel } from '@ngodings/ngx-image-tagger/src/lib/model/tag';
+import { TaggerModel } from 'packages/ngx-image-tagger/src/lib/model/tag';
 
 @Component({
   selector: 'app-root',

@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgxCurrencyModule } from '@ngodings/ngx-currency-directive/src/public-api';
-import { NgxImageTaggerModule } from '@ngodings/ngx-image-tagger/src/public-api';
+import { NgxCurrencyModule } from 'packages/ngx-currency-directive/src/public-api';
+import { NgxImageTaggerModule } from 'packages/ngx-image-tagger/src/public-api';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
