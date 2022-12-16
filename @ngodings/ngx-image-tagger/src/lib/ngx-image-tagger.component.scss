@@ -1,0 +1,267 @@
+@import '~material-icons/iconfont/material-icons.css';
+
+ngx-image-tagger {
+  font-family: inherit;
+  font-size: 12px;
+
+  .pointer {
+    cursor: pointer;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .items-end {
+    align-items: end;
+  }
+
+  .items-start {
+    align-items: start;
+  }
+
+  .items-center {
+    align-items: center;
+  }
+
+  .justify-content-center {
+    justify-content: center;
+  }
+
+  .justify-content-end {
+    justify-content: end;
+  }
+
+  .justify-space-between {
+    justify-content: space-between;
+  }
+
+  .w-half {
+    width: 50%;
+  }
+
+  .ml-2 {
+    margin-left: 0.5rem;
+  }
+
+  .mr-2 {
+    margin-right: 0.5rem;
+  }
+
+  .mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .mb-3 {
+    margin-bottom: 0.75rem;
+  }
+
+  .mt-2 {
+    margin-top: 0.5rem;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .flex-col {
+    direction: column;
+  }
+
+  .gap-2 {
+    gap: 0.5rem;
+  }
+
+  .thumnbnail {
+    img {
+      width: 50px !important;
+      height: 50px !important;
+      border-radius: 6px;
+    }
+  }
+
+  .create-title {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  input.input-style {
+    padding: 10px;
+    border-radius: 6px;
+    font-size: inherit;
+    border: 2px solid #eee;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  button {
+    font-size: inherit;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .w-full {
+    width: 100%;
+  }
+
+  .button-style[disabled] {
+    border: 1px solid #eee !important;
+    background-color: #eee !important;
+    color: #bbb !important;
+  }
+
+  .button-style {
+    border: 1px solid;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 6px;
+  }
+
+  .button-style.outline {
+    border: 1px solid;
+    background: white;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 6px;
+  }
+
+  .tagger {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    display: inline-block;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+      object-position: center;
+      height: 100%;
+
+    }
+
+    .pin {
+      box-shadow: 0 5px 5px -3px #0003, 0 8px 10px 1px #00000024, 0 3px 14px 2px #0000001f;
+      height: 15px;
+      width: 15px;
+      border: 2px solid;
+      color: white;
+      border-top-right-radius: 100%;
+      border-bottom-left-radius: 100%;
+      border-bottom-right-radius: 100%;
+      background-color: #fff;
+      color: #eee;
+
+      i {
+        font-size: 18px;
+      }
+    }
+
+    .add-tag {
+      position: absolute;
+      z-index: 1;
+
+
+      .content {
+        width: 150px;
+        background-color: white;
+        padding: 14px;
+        border-radius: 6px;
+        border: 1px solid #fafafa;
+        box-shadow: 0 5px 5px -3px #0003, 0 8px 10px 1px #00000024, 0 3px 14px 2px #0000001f;
+
+        input {
+          font-size: 10px;
+        }
+
+        input::placeholder {
+          font-size: 10px;
+        }
+      }
+    }
+
+    .button-tag {
+      font-size: 10px !important;
+    }
+
+    .tagging.is-view {
+      width: auto;
+    }
+
+    .tagging {
+      position: absolute;
+
+      i {
+        font-size: 14px;
+      }
+
+      .name {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .link {
+        color: #007ac1;
+        transition: all 0.4s ease;
+        font-size: 10px;
+      }
+
+      .content {
+        width: 150px;
+        background-color: white;
+        padding: 14px;
+        border-radius: 6px;
+        border: 1px solid #fafafa;
+        box-shadow: 0 5px 5px -3px #0003, 0 8px 10px 1px #00000024, 0 3px 14px 2px #0000001f;
+      }
+    }
+  }
+
+  .shop {
+    padding: 7.5px 10px;
+    cursor: pointer;
+    color: white;
+    margin-top: -5px !important;
+  }
+
+  .shop-icon.with-shop {
+    bottom: 48px;
+    left: 10px;
+  }
+
+  .shop-icon.without-shop {
+    bottom: 15px;
+    left: 10px;
+  }
+
+  .shop-icon {
+    position: absolute;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    background-color: #fff;
+    color: rgb(110, 110, 110);
+    border-radius: 100%;
+    box-shadow: 0 5px 5px -3px #0003, 0 8px 10px 1px #00000024, 0 3px 14px 2px #0000001f;
+    cursor: pointer;
+    i {
+      font-size: 16px;
+    }
+  }
+
+  .shop-icon.active {
+    color: rgb(68, 68, 68);
+  }
+  .shop-icon:hover {
+    transition: all 0.4s ease;
+    color: rgb(68, 68, 68);
+  }
+}

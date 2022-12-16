@@ -1,0 +1,87 @@
+<div class="tagger" id="{{ tagger.idParent }}">
+  <img alt="Image Tagger" id="{{ tagger.id }}" [src]="tagger.url" [ngClass]="imageClassList"> 
+  <ng-container *ngIf="tagger?.tags && tagger.tags?.length! > 0 && onShowTagMode === 'IconClick'">
+    <div class="shop-icon" [class.active]="isShowView" (click)="isShowView = !isShowView" [class.without-shop]="!isShowShop" [class.with-shop]="isShowShop">
+      <i class="material-icons">local_mall</i>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="isShowShop">
+    <div class="shop flex items-center justify-between"  [ngStyle]="{ 'background': backgroundColor }" (click)="goToURL(tagger.url)">
+      <div class="w-half">
+        {{ titleShop }}
+      </div>
+      <div class="flex items-center justify-content-end w-half">
+        <i class="material-icons">navigate_next</i>
+      </div>
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="isShowForm">
+    <div class="add-tag flex" *ngIf="isAllowCreate" [ngStyle]="{
+        'top.%': tagger.y , 
+        'left.%': tagger.x
+    }" [class.items-start]="tagger.isOffsideY && !tagger.isOffsideX || tagger.isOffsideY && tagger.isOffsideX">
+
+      <div class="pin mr-2"></div>
+
+      <div class="content">
+        <ng-container *ngIf="placeholderCreateTitle">
+          <div class="mb-3 create-title">
+            {{ placeholderCreateTitle }}
+          </div>
+        </ng-container>
+        <div>
+          <input class="input-style" [(ngModel)]="form.name" [placeholder]="placeholderName" type="text" [ngClass]="inputClassList">
+        </div>
+        <ng-container *ngIf="isShowPrice">
+          <div class="mt-2">
+            <input class="input-style" [(ngModel)]="form.price" currencyMask [options]="{ prefix: '$ ', thousands: '.', decimal: ',' }" [placeholder]="placeholderPrice" [ngClass]="inputClassList">
+          </div>
+        </ng-container>
+        <ng-container *ngIf="isShowLink">
+          <div class="mt-2">
+            <input class="input-style" [(ngModel)]="form.url" [placeholder]="placeholderLink" type="email" [ngClass]="inputClassList">
+          </div>
+        </ng-container>
+        <div class="mt-2 flex items-center justify-space-between gap-2">
+          <div class="w-half">
+            <button class="button-style outline" (click)="isShowForm = false" [ngStyle]="{ 'border-color': backgroundColor, 'color': backgroundColor }">
+              {{ buttonCancelTitle }}
+            </button>
+          </div>
+          <div class="w-half ">
+            <button class="button-style" (click)="submitTag(tagger)" [ngStyle]="{ 'border-color': backgroundColor, 'background': backgroundColor, 'color': textColor  }" [disabled]="!form.name || !form.url && isShowLink">
+              {{ buttonCreateTitle }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="tagger.tags && isShowView">
+    <ng-container *ngFor="let tag of tagger.tags; let subindex = index">
+      <div class="tagging flex items-start " (mouseover)="changeStyleHover(tag.id+subindex,true)" (click)="changeStyleClick(tag.id+subindex, tag)"
+        (mouseout)="changeStyleHover(tag.id+subindex,false)" [ngStyle]="{
+          'top.%': tag.y, 
+          'left.%': tag.x
+            }">
+        <div class="pin mr-2 pointer">
+        </div>
+        <div [id]="tag.id+subindex" class="content" style="display: none;">
+          <div class="flex items-center justify-between gap-2">
+            <ng-container *ngIf="isShowThumbnail">
+              <div class="thumnbnail">
+                <img [src]="tagger.url" [ngStyle]="{'object-position':''+tag.x+'% '+tag.y+'%'+'', 'object-fit': 'none'}">
+              </div>
+            </ng-container>
+            <div class="">
+              <div class="name">{{ tag.name }}</div>
+              <div *ngIf="isShowLink" class="link mt-2 pointer" (click)="goToTag(tag)">Go to link</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </ng-container>
+</div>
