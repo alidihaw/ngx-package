@@ -6,49 +6,21 @@
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </div>
       <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-60 menu-mobile bg-white">
-        <li><div aria-label="Navbar" (click)="appHelper.scrollToTop()">Home</div></li>
-        <li><div aria-label="Navbar" (click)="appHelper.scrollToElement('service')">Service</div></li> 
-        <li><div aria-label="Navbar" (click)="appHelper.scrollToElement('team')">Team</div></li>
-        <li tabindex="0">
-          <div class="justify-between" aria-label="Navbar">
-            Themeforest
-            <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
-          </div>
-          <ul class="menu menu-compact dropdown-content p-2 shadow w-60 submenu">
-              <li>
-                <div aria-label="Navbar" (click)="appHelper.goToLink('/')" class="flex justify-between items-center">
-                  Ngodings - Multipurpose
-                </div> 
-              </li>
-          </ul>
-        </li> 
-        <li><div aria-label="Navbar" (click)="appHelper.goToLink('https://wa.me/6285280871948')">Contact Us</div></li>
+        <li><div aria-label="Navbar" (click)="appHelper.goToURL('/')">Packages</div></li>
+        <li><div aria-label="Navbar" (click)="appHelper.goToLink('https://github.com/alidihaw/ngodings')">Github</div></li>
+        <li><div aria-label="Navbar" (click)="appHelper.goToLink('https://www.buymeacoffee.com/alidihaw')">Support Me</div></li>
       </ul>
     </div>
-    <div aria-label="Navbar" class="pointer" (click)="appHelper.scrollToTop()">
+    <div aria-label="Navbar" class="pointer" (click)="appHelper.goToURL('/')">
       <img loading="lazy" class="logo" *ngIf="isScroll" src="assets/logo.png" alt="logo">
       <img loading="lazy" class="logo" *ngIf="!isScroll" src="assets/logo-white.png" alt="logo">
     </div>
   </div>
   <div class="flex-auto justify-end">
     <ul class="menu menu-horizontal p-0 hidden-fm flex">
-      <li><div aria-label="Navbar" (click)="appHelper.scrollToTop()">Home</div></li>
-      <li><div aria-label="Navbar" (click)="appHelper.scrollToElement('service')">Service</div></li> 
-      <li><div aria-label="Navbar" (click)="appHelper.scrollToElement('team')">Team</div></li>
-      <li tabindex="0">
-        <div aria-label="Navbar" class="justify-between">
-          Themeforest
-          <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
-        </div>
-        <ul class="menu menu-compact dropdown-content p-2 shadow w-60 submenu">
-            <li>
-              <div aria-label="Navbar" (click)="appHelper.goToLink('https://preview.multipurpose.ngodings.com')" class="flex justify-between items-center">
-                Ngodings - Multipurpose
-              </div> 
-            </li>
-        </ul>
-      </li> 
-      <li><div aria-label="Navbar" (click)="appHelper.goToLink('https://wa.me/6285280871948')">Contact Us</div></li>
+      <li><div aria-label="Navbar" (click)="appHelper.goToURL('/')">Packages</div></li>
+      <li><div aria-label="Navbar" (click)="appHelper.goToLink('https://github.com/alidihaw/ngodings')">Github</div></li>
+      <li><div aria-label="Navbar" (click)="appHelper.goToLink('https://www.buymeacoffee.com/alidihaw')">Support Me</div></li>
     </ul>
   </div>
 </div>

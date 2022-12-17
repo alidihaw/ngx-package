@@ -28,6 +28,7 @@
       "@models/*": ["src/app/models/*"],
       "@layouts/*": ["src/app/layouts/*"],
       "@sections/*": ["src/app/sections/*"],
+      "@packages/*": ["src/app/packages/*"],
     },
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,

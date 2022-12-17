@@ -1,6 +1,10 @@
 app-copyright {
     .copyright {
-        border-top: 1px solid hsl(var(--sf));
+        border-top: 1px solid #1d1d1d;
+    }
+
+    .bg-copyright {
+        background-color: #1d1d1d;
     }
 
     .social-media {

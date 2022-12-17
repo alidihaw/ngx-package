@@ -44,7 +44,7 @@ export class AppData {
         }
     }
 
-    private themeValue = 'Corporate';
+    private themeValue = 'Cyberpunk';
     get theme(): string {
         return this.themeValue;
     }

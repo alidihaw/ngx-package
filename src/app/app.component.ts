@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { AppData } from './app.data';
 
 @Component({
@@ -6,8 +6,16 @@ import { AppData } from './app.data';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit, OnDestroy {
   constructor(public appData: AppData,) {
 
+  }
+
+  ngOnInit(): void {
+
+  }
+
+  ngOnDestroy(): void {
+    
   }
 }

@@ -8,6 +8,18 @@ const routes: Routes = [
       import('./modules/home/home.module').then((m) => m.HomeModule),
     canActivate: []
   },
+  {
+    path: 'packages',
+    canActivate: [],
+    children: [
+      {
+        path: 'ngx-currency-directive',
+        loadChildren: () =>
+          import('./packages/ngx-currency-directive/ngx-currency-directive.module').then((m) => m.PackageNgxCurrencyDirectiveModule),
+        canActivate: []
+      },
+    ]
+  },
 ];
 
 @NgModule({

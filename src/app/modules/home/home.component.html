@@ -6,3 +6,24 @@
     [isShowShop]="true"
 >
 </ngx-image-tagger> -->
+
+<div class="p-layout mt-10 text-center bg-home">
+    <div style="height: 70px"></div>
+    <div class="pt-10 pb-10">
+      <div class="flex items-center justify-center">
+        <img src="assets/angular.png" style="width: 100px">
+      </div>
+      <div class="text-2xl md:text-4xl">
+        Angular - Packages
+      </div>
+    </div>
+    <div style="height: 50px"></div>
+
+    <div class="grid grid-cols-4 gap-6 mb-10">
+        <ng-container *ngFor="let item of packages">
+            <div class="card-standard pointer" (click)="appHelper.goToURL(item.url)">
+                {{ item.name }}
+            </div>
+        </ng-container>
+      </div>
+</div>

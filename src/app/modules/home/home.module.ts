@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 
+import { ButtonModule } from '@components/button/button.module';
+
 const routes: Routes = [
     {
         path: '',
@@ -12,6 +14,7 @@ const routes: Routes = [
 
 @NgModule({
     declarations: [
+        HomeComponent
     ],
     imports: [
         RouterModule.forChild(routes),

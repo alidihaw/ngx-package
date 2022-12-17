@@ -1,4 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { ColorStandard } from '@models/color';
+import { SizeStandard } from '@models/size';
+import { AppHelper } from 'src/app/app.helper';
 
 // tagger: TaggerModel = {
 //     idParent: 'ngx-image-tagger-parent-1',
@@ -11,13 +14,26 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 //   price = 0;
 
 @Component({
-    selector: 'maple-home',
+    selector: 'ngodings-home',
     templateUrl: './home.component.html',
     styleUrls: ['./home.component.scss'],
     encapsulation: ViewEncapsulation.None,
 })
 export class HomeComponent implements OnInit {
-    constructor() {
+    color = ColorStandard;
+    size = SizeStandard;
+   
+    packages: {name: string, url: string}[] = [
+        {
+            name: 'ngx-currency-directive',
+            url: 'packages/ngx-currency-directive'
+        },
+        {
+            name: 'ngx-image-tagger',
+            url: 'packages/ngx-image-tagger'
+        }
+    ]
+    constructor(public appHelper: AppHelper) {
 
     }
 

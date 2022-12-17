@@ -7,15 +7,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarModule } from '@layouts/navbar/navbar.module';
 import { FooterModule } from '@layouts/footer/footer.module';
 import { CopyrightModule } from '@layouts/copyright/copyright.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
 
     NavbarModule,
     FooterModule,
