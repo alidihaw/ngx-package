@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "mti-group-96"
+  },
+  "targets": {
+    "mti-group-96": {
+      "hosting": {
+        "ngodings-npm": [
+          "ngodings-npm"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

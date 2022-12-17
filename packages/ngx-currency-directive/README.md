@@ -18,7 +18,7 @@ Buy me coffe: [https://www.buymeacoffee.com/alidihaw](https://www.buymeacoffee.c
 Install the package by command:
 
 ```sh
-    npm install @ngodings/ngx-currency-directive --save
+ npm install @ngodings/ngx-currency-directive --save
 ```
 
 Import the module
