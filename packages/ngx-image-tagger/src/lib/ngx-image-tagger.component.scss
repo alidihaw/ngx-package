@@ -24,6 +24,10 @@ ngx-image-tagger {
     align-items: center;
   }
 
+  .justify-content-start {
+    justify-content: start;
+  }
+
   .justify-content-center {
     justify-content: center;
   }
@@ -56,10 +60,17 @@ ngx-image-tagger {
     margin-bottom: 0.75rem;
   }
 
+  .mt-1 {
+    margin-top: 0.25rem;
+  }
+
   .mt-2 {
     margin-top: 0.5rem;
   }
 
+  .text-left {
+    text-align: left;
+  }
   .flex {
     display: flex;
   }
@@ -73,9 +84,13 @@ ngx-image-tagger {
   }
 
   .thumnbnail {
+    min-width: 70px !important;
+    width: 70px !important;
+    height: 70px !important;
     img {
-      width: 54px !important;
-      height: 54px !important;
+      min-width: 70px !important;
+      width: 70px !important;
+      height: 70px !important;
       border-radius: 6px;
     }
   }
@@ -136,6 +151,7 @@ ngx-image-tagger {
     height: fit-content;
     width: fit-content;
     display: inline-block;
+    // overflow: hidden;
 
     img {
       width: 100%;
@@ -168,7 +184,7 @@ ngx-image-tagger {
 
 
       .content {
-        width: 150px;
+        width: 200px;
         background-color: white;
         padding: 14px;
         border-radius: 6px;
@@ -219,7 +235,7 @@ ngx-image-tagger {
       }
 
       .content {
-        width: 150px;
+        width: 200px;
         background-color: white;
         padding: 14px;
         border-radius: 6px;
@@ -233,11 +249,11 @@ ngx-image-tagger {
     padding: 7.5px 10px;
     cursor: pointer;
     color: white;
-    margin-top: -5px !important;
+    margin-top: -6px;
   }
 
   .shop-icon.with-shop {
-    bottom: 48px;
+    bottom: 10px;
     left: 10px;
   }
 

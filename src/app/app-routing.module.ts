@@ -18,6 +18,12 @@ const routes: Routes = [
           import('./packages/ngx-currency-directive/ngx-currency-directive.module').then((m) => m.PackageNgxCurrencyDirectiveModule),
         canActivate: []
       },
+      {
+        path: 'ngx-image-tagger',
+        loadChildren: () =>
+          import('./packages/ngx-image-tagger/ngx-image-tagger.module').then((m) => m.PackageNgxImageTaggerDirectiveModule),
+        canActivate: []
+      },
     ]
   },
 ];

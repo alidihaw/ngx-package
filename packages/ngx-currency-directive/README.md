@@ -2,7 +2,7 @@
 
 ## Demo - Angular v15
 
-https://ngodings.com
+[https://npm.ngodings.com/packages/ngx-currency-directive](https://npm.ngodings.com/packages/ngx-currency-directive)
 
 ## Support Me
 

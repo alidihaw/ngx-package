@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { CurrencyMaskInputMode } from 'packages/ngx-currency-directive/src/public-api';
+import { AppData } from 'src/app/app.data';
 import { AppHelper } from 'src/app/app.helper';
 
 @Component({
@@ -26,9 +27,9 @@ export class PackageNgxCurrencyDirectiveComponent implements OnInit {
         inputMode: CurrencyMaskInputMode.FINANCIAL, 
         allowNegative: true,
         allowZero: true
-    ,}
+    }
 
-    constructor(public appHelper: AppHelper) {
+    constructor(public appHelper: AppHelper, public appData: AppData,) {
 
     }
 

@@ -5,16 +5,6 @@
       <i class="material-icons">local_mall</i>
     </div>
   </ng-container>
-  <ng-container *ngIf="isShowShop">
-    <div class="shop flex items-center justify-between"  [ngStyle]="{ 'background': backgroundColor }" (click)="goToURL(tagger.url)">
-      <div class="w-half">
-        {{ titleShop }}
-      </div>
-      <div class="flex items-center justify-content-end w-half">
-        <i class="material-icons">navigate_next</i>
-      </div>
-    </div>
-  </ng-container>
 
   <ng-container *ngIf="isShowForm">
     <div class="add-tag flex" *ngIf="isAllowCreate" [ngStyle]="{
@@ -49,7 +39,7 @@
               {{ buttonCancelTitle }}
             </button>
           </div>
-          <div class="w-half ">
+          <div class="w-half">
             <button class="button-style" (click)="submitTag(tagger)" [ngStyle]="{ 'border-color': backgroundColor, 'background': backgroundColor, 'color': textColor  }" [disabled]="!form.name || !form.url && isShowLink">
               {{ buttonCreateTitle }}
             </button>
@@ -61,7 +51,7 @@
 
   <ng-container *ngIf="tagger.tags && isShowView">
     <ng-container *ngFor="let tag of tagger.tags; let subindex = index">
-      <div class="tagging flex items-start " (mouseover)="changeStyleHover(tag.id+subindex,true)" (click)="changeStyleClick(tag.id+subindex, tag)"
+      <div class="tagging flex items-start" (mouseover)="changeStyleHover(tag.id+subindex,true)" (click)="changeStyleClick(tag.id+subindex, tag)"
         (mouseout)="changeStyleHover(tag.id+subindex,false)" [ngStyle]="{
           'top.%': tag.y, 
           'left.%': tag.x
@@ -75,10 +65,10 @@
                 <img [src]="tagger.url" [ngStyle]="{'object-position':''+tag.x+'% '+tag.y+'%'+'', 'object-fit': 'none'}">
               </div>
             </ng-container>
-            <div class="">
+            <div class="text-left">
               <div class="name">{{ tag.name }}</div>
-              <div *ngIf="isShowPrice" class="mt-2 price" >{{ tag.price | currency:'USD' }}</div>
-              <div *ngIf="isShowLink" class="link mt-2 pointer" (click)="goToTag(tag)">Go to link</div>
+              <div *ngIf="isShowPrice" class="mt-1 price" >{{ tag.price | currency:'USD' }}</div>
+              <div *ngIf="isShowLink" class="link mt-1 pointer" (click)="goToTag(tag)">Go to link</div>
             </div>
           </div>
         </div>
@@ -86,3 +76,14 @@
     </ng-container>
   </ng-container>
 </div>
+
+<ng-container *ngIf="isShowShop">
+  <div class="shop flex items-center justify-between"  [ngStyle]="{ 'background': backgroundColor }" (click)="goToURL(tagger.urlShop!)">
+    <div class="w-half flex items-center justify-content-start">
+      {{ titleShop }}
+    </div>
+    <div class="flex items-center justify-content-end w-half">
+      <i class="material-icons">navigate_next</i>
+    </div>
+  </div>
+</ng-container>

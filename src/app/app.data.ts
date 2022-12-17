@@ -53,5 +53,15 @@ export class AppData {
             this.themeValue = value;
         }
     }
+
+    private versionValue = 'v15.0';
+    get version(): string {
+        return this.versionValue;
+    }
+    set version(value: string) {
+        if (this.versionValue !== value) {
+            this.versionValue = value;
+        }
+    }
 }
 

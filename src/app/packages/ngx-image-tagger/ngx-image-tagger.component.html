@@ -1,0 +1,137 @@
+<div class="p-layout mt-10 text-center">
+  <div style="height: 70px"></div>
+  <div class="pt-10 pb-10">
+    <div class="flex items-center justify-center">
+      <img src="assets/angular.png" style="width: 100px">
+    </div>
+      <div class="text-2xl md:text-4xl">
+        ngx-image-tagger
+      </div>
+      <div class="text-2xl mt-2">
+        {{ appData.version }}
+      </div>
+    </div>
+    <div style="height: 50px"></div>
+
+    <div class="content">
+      <div class="flex items-start justify-center gap-4 mb-4">
+        <div class="w-1/2">
+          <div class="font-bold mb-2">Image Tag - Like Instagram - On Hover</div>
+          <div>
+            <ngx-image-tagger 
+              [tagger]="data.taggerHover" 
+              [isShowShop]="true" 
+              [isShowPrice]="true" 
+              [isShowLink]="true" 
+              [isShowThumbnail]="true" 
+              [isAllowCreate]="false" 
+              [placeholderCreateTitle]="'Tag your product!'"
+              [placeholderLink]="'Link'"
+              [placeholderPrice]="'Price'"
+              [onShowTagMode]="'Hover'"
+              [imageClassList]="''"
+              [inputClassList]="''"
+              [backgroundColor]="'#03a9f4'"
+              [borderColor]="'#007ac1'"
+              [textColor]="'#ffffff'"
+              (taggerChange)="data.taggerHover = $event"
+            >
+            </ngx-image-tagger>
+          </div>
+        </div>
+        <div class="w-1/2">
+          <div class="code mt-6"><pre><code>{{ sample1 }}</code></pre></div>
+        </div>
+      </div>
+
+      <div class="flex items-start justify-center gap-4 mb-4">
+        <div class="w-1/2">
+          <div class="font-bold mb-2">Image Tag - Like Instagram - Click Shop</div>
+          <div>
+            <ngx-image-tagger 
+              [tagger]="data.tagger" 
+              [isShowShop]="true" 
+              [isShowPrice]="true" 
+              [isShowLink]="true" 
+              [isShowThumbnail]="true" 
+              [isAllowCreate]="false" 
+              [placeholderCreateTitle]="'Tag your product!'"
+              [placeholderLink]="'Link'"
+              [placeholderPrice]="'Price'"
+              [onShowTagMode]="'IconClick'"
+              [imageClassList]="''"
+              [inputClassList]="''"
+              [backgroundColor]="'#03a9f4'"
+              [borderColor]="'#007ac1'"
+              [textColor]="'#ffffff'"
+              (taggerChange)="data.tagger = $event"
+            >
+            </ngx-image-tagger>
+          </div>
+        </div>
+        <div class="w-1/2">
+          <div class="code mt-6"><pre><code>{{ sample2 }}</code></pre></div>
+        </div>
+      </div>
+
+      <div class="flex items-start justify-center gap-4 mb-4">
+        <div class="w-1/2">
+          <div class="font-bold mb-2">Image Tag - Like Instagram - Create Tag</div>
+          <div>
+            <ngx-image-tagger 
+              [tagger]="data.taggerCreate" 
+              [isShowShop]="false" 
+              [isShowPrice]="true" 
+              [isShowLink]="true" 
+              [isShowThumbnail]="true" 
+              [isAllowCreate]="true" 
+              [placeholderCreateTitle]="'Tag your product!'"
+              [placeholderLink]="'Link'"
+              [placeholderPrice]="'Price'"
+              [onShowTagMode]="'IconClick'"
+              [imageClassList]="''"
+              [inputClassList]="''"
+              [backgroundColor]="'#03a9f4'"
+              [borderColor]="'#007ac1'"
+              [textColor]="'#ffffff'"
+              (taggerChange)="data.taggerCreate = $event"
+            >
+            </ngx-image-tagger>
+          </div>
+        </div>
+        <div class="w-1/2">
+          <div class="code mt-6"><pre><code>{{ sample1 }}</code></pre></div>
+        </div>
+      </div>
+
+      <div class="flex items-start justify-center gap-4 mb-4">
+        <div class="w-1/2">
+          <div class="font-bold mb-2">Image Tag - Like Instagram - On Click Pin</div>
+          <div>
+            <ngx-image-tagger 
+              [tagger]="data.taggerClick" 
+              [isShowShop]="true" 
+              [isShowPrice]="true" 
+              [isShowLink]="true" 
+              [isShowThumbnail]="true" 
+              [isAllowCreate]="false" 
+              [placeholderCreateTitle]="'Tag your product!'"
+              [placeholderLink]="'Link'"
+              [placeholderPrice]="'Price'"
+              [onShowTagMode]="'Click'"
+              [imageClassList]="''"
+              [inputClassList]="''"
+              [backgroundColor]="'#03a9f4'"
+              [borderColor]="'#007ac1'"
+              [textColor]="'#ffffff'"
+              (taggerChange)="data.taggerClick = $event"
+            >
+            </ngx-image-tagger>
+          </div>
+        </div>
+        <div class="w-1/2">
+          <div class="code mt-6"><pre><code>{{ sample1 }}</code></pre></div>
+        </div>
+      </div>
+    </div>
+</div>

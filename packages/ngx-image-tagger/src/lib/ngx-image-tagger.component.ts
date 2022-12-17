@@ -17,7 +17,6 @@ export class NgxImageTaggerComponent implements OnInit {
   @Input() isShowThumbnail = true;
   @Input() imageClassList = "";
 
-
   @Input() placeholderName = 'Name';
 
   @Input() placeholderPrice = 'Price';
@@ -39,7 +38,7 @@ export class NgxImageTaggerComponent implements OnInit {
   @Input() isShowShop = false;
   @Input() titleShop = "Go to shop";
 
-  @Input() onShowTagMode: "Hover" | "Click" | "IconClick" = "IconClick";
+  @Input() onShowTagMode: "Hover" | "Click" | "IconClick" = "Hover";
 
   @Input() tagger: TaggerModel = {
     idParent: 'image-parent',
@@ -51,7 +50,7 @@ export class NgxImageTaggerComponent implements OnInit {
     x: 0,
     y: 0,
     url: '',
-    tags: []
+    tags: [ ]
   }
   @Output() taggerChange: EventEmitter<TaggerModel> = new EventEmitter<TaggerModel>();
 
@@ -61,12 +60,13 @@ export class NgxImageTaggerComponent implements OnInit {
 
   constructor() {
     fromEvent(document.body, 'mousedown').subscribe((event: any) => {
+      console.log("event", event);
       const elementId = (event.target as Element).id;
       if (this.tagger && elementId === this.tagger.id) {
         this.resetTag();
 
-        const x = event.x;
-        const y = event.y;
+        const x = event.layerX;
+        const y = event.layerY - 6;
 
         this.heightElement = event?.srcElement?.offsetHeight;
         const halfY = this.heightElement / 2;
@@ -127,8 +127,10 @@ export class NgxImageTaggerComponent implements OnInit {
     if (el) {
       if (show) {
         el.style.display = "block"
+        el.style.zIndex = "100"
       } else {
         el.style.display = "none"
+        el.style.zIndex = "1"
       }
     }
   }

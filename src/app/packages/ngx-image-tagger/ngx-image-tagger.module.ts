@@ -1,35 +1,30 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
-
-import { PackageNgxCurrencyDirectiveComponent } from './ngx-currency-directive.component';
+import { PackageNgxImageTaggerDirectiveComponent } from './ngx-image-tagger.component';
 import { FormsModule } from '@angular/forms';
-import { NgxCurrencyModule } from 'packages/ngx-currency-directive/src/public-api';
-
-import { MatInputModule } from '@angular/material/input';
+import { NgxImageTaggerModule } from 'packages/ngx-image-tagger/src/public-api';
 
 const routes: Routes = [
     {
         path: '',
-        component: PackageNgxCurrencyDirectiveComponent
+        component: PackageNgxImageTaggerDirectiveComponent
     },
 ];
 
 @NgModule({
     declarations: [
-        PackageNgxCurrencyDirectiveComponent
+        PackageNgxImageTaggerDirectiveComponent
     ],
     imports: [
         RouterModule.forChild(routes),
         CommonModule,
         FormsModule,
 
-        MatInputModule,
-
-        NgxCurrencyModule,
+        NgxImageTaggerModule,
     ],
     exports: [],
     schemas: [
     ],
 })
-export class PackageNgxCurrencyDirectiveModule { }
+export class PackageNgxImageTaggerDirectiveModule { }
