@@ -10,6 +10,8 @@ import { CopyrightModule } from '@layouts/copyright/copyright.module';
 import { FormsModule } from '@angular/forms';
 import { ServiceWorkerModule } from '@angular/service-worker';
 
+import { environment } from '@environments/environment';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,10 +26,9 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     FooterModule,
     CopyrightModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
-      enabled: !isDevMode(),
-      // Register the ServiceWorker as soon as the application is stable
-      // or after 30 seconds (whichever comes first).
-      registrationStrategy: 'registerWhenStable:30000'
+      enabled: environment.production,
+      registrationStrategy: 'registerImmediately',
+      // registrationStrategy: 'registerWhenStable:30000'
     }),
   ],
   providers: [],
