@@ -7,8 +7,7 @@ import { AppData } from './app.data';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit, OnDestroy {
-  constructor(public appData: AppData,) {
-
+  constructor(public appData: AppData) {
   }
 
   ngOnInit(): void {
