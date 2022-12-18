@@ -3,12 +3,12 @@
   "version": "15.0.1",
   "peerDependencies": {
     "@angular/common": "^15.0.0",
-    "@angular/core": "^15.0.0"
+    "@angular/core": "^15.0.0",
+    "@ngodings/ngx-currency": "^15.0.0",
+    "material-icons": "^1.13.1"
   },
   "license": "MIT",
   "dependencies": {
-    "@ngodings/ngx-currency": "^15.0.0",
-    "material-icons": "^1.13.1",
     "tslib": "^2.3.0"
   },
   "homepage": "https://npm.ngodings.com/packages/ngx-image-tagger",
