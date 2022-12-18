@@ -8,7 +8,7 @@ import { AppHelper } from 'src/app/app.helper';
     styleUrls: ['./ngx-copy.component.scss'],
     encapsulation: ViewEncapsulation.None,
 })
-export class PackageNgxCurrencyDirectiveComponent implements OnInit {
+export class PackageNgxCurrencyComponent implements OnInit {
 
     input = 'Lorem ipsum dolor sit amet';
     

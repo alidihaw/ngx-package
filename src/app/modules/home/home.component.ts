@@ -24,8 +24,8 @@ export class HomeComponent implements OnInit {
             url: 'packages/ngx-copy'
         },
         {
-            name: 'ngx-currency-directive',
-            url: 'packages/ngx-currency-directive'
+            name: 'ngx-currency',
+            url: 'packages/ngx-currency'
         },
     ]
     constructor(public appHelper: AppHelper, public appData: AppData,) {

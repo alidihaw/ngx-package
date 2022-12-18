@@ -7,7 +7,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@ngodings/ngx-currency-directive": "^15.0.0",
+    "@ngodings/ngx-currency": "^15.0.0",
     "material-icons": "^1.13.1",
     "tslib": "^2.3.0"
   },

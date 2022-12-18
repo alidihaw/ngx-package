@@ -2,13 +2,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
-import { PackageNgxCurrencyComponent } from './ngx-copy.component';
+import { PackageNgxCurrencyComponent } from './ngx-currency.component';
 import { FormsModule } from '@angular/forms';
+import { NgxCurrencyModule } from 'packages/ngx-currency/src/public-api';
 
 import { MatInputModule } from '@angular/material/input';
-import { NgxCopyDirective } from 'packages/ngx-copy/src/public-api';
-
-import { MatButtonModule } from '@angular/material/button';
 
 const routes: Routes = [
     {
@@ -27,9 +25,8 @@ const routes: Routes = [
         FormsModule,
 
         MatInputModule,
-        MatButtonModule,
 
-        NgxCopyDirective,
+        NgxCurrencyModule,
     ],
     exports: [],
     schemas: [

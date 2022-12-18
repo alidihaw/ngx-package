@@ -13,15 +13,15 @@ const routes: Routes = [
     canActivate: [],
     children: [
       {
-        path: 'ngx-currency-directive',
+        path: 'ngx-currency',
         loadChildren: () =>
-          import('./packages/ngx-currency-directive/ngx-currency-directive.module').then((m) => m.PackageNgxCurrencyDirectiveModule),
+          import('./packages/ngx-currency/ngx-currency.module').then((m) => m.PackageNgxCurrencyModule),
         canActivate: []
       },
       {
         path: 'ngx-copy',
         loadChildren: () =>
-          import('./packages/ngx-copy/ngx-copy.module').then((m) => m.PackageNgxCurrencyDirectiveModule),
+          import('./packages/ngx-copy/ngx-copy.module').then((m) => m.PackageNgxCurrencyModule),
         canActivate: []
       },
       {

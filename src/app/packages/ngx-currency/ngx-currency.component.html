@@ -1,0 +1,40 @@
+<div class="p-layout mt-10 text-center">
+  <div style="height: 35px"></div>
+  <div class="pt-10 pb-10">
+    <div class="flex items-center justify-center">
+      <img src="assets/angular.png" alt="Angular" style="width: 100px">
+    </div>
+      <div class="text-2xl md:text-4xl">
+        ngx-currency
+      </div>
+      <div class="text-2xl mt-2">
+        {{ appData.version }} - <a href="https://github.com/alidihaw/ngodings/tree/master/packages/ngx-currency" target="_blank">Installation</a>
+      </div>
+    </div>
+    <div style="height: 35px"></div>
+
+    <div class="content">
+
+      <div>
+        <mat-form-field class="input-sample">
+          <mat-label>Price</mat-label>
+          <input matInput placeholder="Input Price..." [(ngModel)]="data.value" currencyMask [options]="config" >
+        </mat-form-field>
+      </div>
+
+      <div class="flex items-start justify-center gap-6">
+        <div class="w-1/2">
+          <div class="value">
+            <div class="font-bold mb-2">Config</div>
+            <pre style="width: 100%">{{ config | json }}</pre>
+          </div>
+        </div>
+        <div class="w-1/2">
+          <div class="value">
+            <div class="font-bold mb-2">Value</div>
+            <pre style="width: 100%">{{ data | json }}</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
