@@ -7,7 +7,8 @@
 ## Support Me
 
 If you like this package I will be happy that you support me on Buy me a coffee :) <br />
-Buy me coffe: [https://www.buymeacoffee.com/alidihaw](https://www.buymeacoffee.com/alidihaw)
+Buy me coffe: [https://www.buymeacoffee.com/alidihaw](https://www.buymeacoffee.com/alidihaw) <br />
+Indonesia People: [https://sociabuzz.com/dihaw](https://sociabuzz.com/dihaw)
 
 ## About
 
