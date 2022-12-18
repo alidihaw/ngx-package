@@ -139,20 +139,21 @@ Image Tag - Like Instagram - On Click Pin
 | name | description | default value   |
 | :---------- | :------------------------------------------------------------ | :-------------- |
 | tagger | Value of the tagger. | refer TaggerModel |
-| isShowShop | Configuration Show/Hide Shop | false  |
-| isShowPrice | Unit of ratio.                                                | undefined       |
-| isShowLink | Theme color.                                                  | undefined       |
-| isAllowCreate | Display mode of the progress.                                 | 'indeterminate' |
-| placeholderCreateTitle | Show tooltip.<br>ex. value / max                              | false           |
-| placeholderLink | Diameter of the progress.                                     | 100             |
-| placeholderPrice | Diameter of the progress.                                     | 100             |
-| onShowTagMode | Diameter of the progress.                                     | 100             |
-| imageClassList | Diameter of the progress.                                     | 100             |
-| inputClassList | Diameter of the progress.                                     | 100             |
-| backgroundColor | Diameter of the progress.                                     | 100             |
-| borderColor | Diameter of the progress.                                     | 100             |
-| textColor | Diameter of the progress.                                     | 100             |
-| taggerChange | Diameter of the progress.                                     | 100             |
+| isShowShop | Configuration Show/Hide Shop | false |
+| isShowPrice | Configuration Show/Hide Price | true |
+| isShowLink | Configuration Show/Hide Link | true |
+| isShowThumbnail | Configuration Show/Hide Thumbnail | true |
+| isAllowCreate | Configuration for Enabled Create Mode | false |
+| placeholderCreateTitle | Title Modal Create  | Tag your product! |
+| placeholderLink | Placeholder for Link | Link |
+| placeholderPrice | Placeholder for Price | Price |
+| onShowTagMode | Mode for Tag (Hover, Click, IconClick) | Hover |
+| imageClassList | Custom class Image |
+| inputClassList | Custom Class Input |
+| backgroundColor | Background color | #03a9f4 |
+| borderColor | Border color | #007ac1 |
+| textColor | Text color | #ffffff |
+| taggerChange | Output for tag | refer TaggerModel |
 
 ## Development
 
