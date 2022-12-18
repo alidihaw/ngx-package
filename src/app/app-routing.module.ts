@@ -19,6 +19,12 @@ const routes: Routes = [
         canActivate: []
       },
       {
+        path: 'ngx-copy',
+        loadChildren: () =>
+          import('./packages/ngx-copy/ngx-copy.module').then((m) => m.PackageNgxCurrencyDirectiveModule),
+        canActivate: []
+      },
+      {
         path: 'ngx-image-tagger',
         loadChildren: () =>
           import('./packages/ngx-image-tagger/ngx-image-tagger.module').then((m) => m.PackageNgxImageTaggerDirectiveModule),

@@ -1,28 +1,33 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { PackageNgxImageTaggerDirectiveComponent } from './ngx-image-tagger.component';
+
+import { PackageNgxCurrencyDirectiveComponent } from './ngx-copy.component';
 import { FormsModule } from '@angular/forms';
-import { NgxImageTaggerModule } from 'packages/ngx-image-tagger/src/public-api';
+
+import { MatInputModule } from '@angular/material/input';
 import { NgxCopyDirective } from 'packages/ngx-copy/src/public-api';
+
+import { MatButtonModule } from '@angular/material/button';
 
 const routes: Routes = [
     {
         path: '',
-        component: PackageNgxImageTaggerDirectiveComponent
+        component: PackageNgxCurrencyDirectiveComponent
     },
 ];
 
 @NgModule({
     declarations: [
-        PackageNgxImageTaggerDirectiveComponent
+        PackageNgxCurrencyDirectiveComponent
     ],
     imports: [
         RouterModule.forChild(routes),
         CommonModule,
         FormsModule,
 
-        NgxImageTaggerModule,
+        MatInputModule,
+        MatButtonModule,
 
         NgxCopyDirective,
     ],
@@ -30,4 +35,4 @@ const routes: Routes = [
     schemas: [
     ],
 })
-export class PackageNgxImageTaggerDirectiveModule { }
+export class PackageNgxCurrencyDirectiveModule { }

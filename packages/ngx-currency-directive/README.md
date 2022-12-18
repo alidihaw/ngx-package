@@ -121,10 +121,6 @@ export class AppModule {}
 * Install [Node.js](http://nodejs.org/) and NPM
 * Install local dev dependencies: `npm install` while current directory is this repo
 
-### Development server
-Run `npm start` or `npm run demo` to start a development server on port 8000 with auto reload + tests.
-
-
 ## License
 
 MIT @ Ali Abdul Wahid

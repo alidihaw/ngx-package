@@ -161,6 +161,39 @@
           }
         }
       }
-    }
+    },
+    "ngx-copy": {
+        "projectType": "library",
+        "root": "packages/ngx-copy",
+        "sourceRoot": "packages/ngx-copy/src",
+        "prefix": "lib",
+        "architect": {
+          "build": {
+            "builder": "@angular-devkit/build-angular:ng-packagr",
+            "options": {
+              "project": "packages/ngx-copy/ng-package.json"
+            },
+            "configurations": {
+              "production": {
+                "tsConfig": "packages/ngx-copy/tsconfig.lib.prod.json"
+              },
+              "development": {
+                "tsConfig": "packages/ngx-copy/tsconfig.lib.json"
+              }
+            },
+            "defaultConfiguration": "production"
+          },
+          "test": {
+            "builder": "@angular-devkit/build-angular:karma",
+            "options": {
+              "tsConfig": "packages/ngx-copy/tsconfig.spec.json",
+              "polyfills": [
+                "zone.js",
+                "zone.js/testing"
+              ]
+            }
+          }
+        }
+      }
   }
 }

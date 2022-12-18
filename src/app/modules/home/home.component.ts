@@ -20,6 +20,10 @@ export class HomeComponent implements OnInit {
             url: 'packages/ngx-image-tagger'
         },
         {
+            name: 'ngx-copy',
+            url: 'packages/ngx-copy'
+        },
+        {
             name: 'ngx-currency-directive',
             url: 'packages/ngx-currency-directive'
         },

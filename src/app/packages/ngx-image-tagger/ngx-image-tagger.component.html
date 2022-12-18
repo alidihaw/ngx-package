@@ -1,5 +1,5 @@
 <div class="p-layout mt-10 text-center">
-  <div style="height: 70px"></div>
+  <div style="height: 35px"></div>
   <div class="pt-10 pb-10">
     <div class="flex items-center justify-center">
       <img src="assets/angular.png" alt="Angular" style="width: 100px">
@@ -8,15 +8,15 @@
         ngx-image-tagger
       </div>
       <div class="text-2xl mt-2">
-        {{ appData.version }}
+        {{ appData.version }} - <a href="https://github.com/alidihaw/ngodings/tree/master/packages/ngx-image-tagger" target="_blank">Installation</a>
       </div>
     </div>
-    <div style="height: 50px"></div>
+    <div style="height: 35px"></div>
 
     <div class="content">
-      <div class="flex items-start justify-center gap-4 mb-4">
+      <div class="font-bold mb-4 text-center">Image Tag - Like Instagram - On Hover</div>
+      <div class="flex items-start justify-center gap-6 mb-6">
         <div class="w-1/2">
-          <div class="font-bold mb-2">Image Tag - Like Instagram - On Hover</div>
           <div>
             <ngx-image-tagger 
               [tagger]="data.taggerHover" 
@@ -40,13 +40,18 @@
           </div>
         </div>
         <div class="w-1/2">
-          <div class="code mt-6"><pre><code>{{ sample1 }}</code></pre></div>
+          <div class="code">
+            <div class="flex justify-end">
+              <i class="material-icons pointer" (click)="copyExSample1.copy()">content_copy</i>
+            </div>
+            <pre ngxCopy #copyExSample1="copy"><code>{{ sample1 }}</code></pre>
+          </div>
         </div>
       </div>
 
-      <div class="flex items-start justify-center gap-4 mb-4">
+      <div class="font-bold mb-4 text-center">Image Tag - Like Instagram - Click Shop</div>
+      <div class="flex items-start justify-center gap-6 mb-6">
         <div class="w-1/2">
-          <div class="font-bold mb-2">Image Tag - Like Instagram - Click Shop</div>
           <div>
             <ngx-image-tagger 
               [tagger]="data.tagger" 
@@ -70,13 +75,18 @@
           </div>
         </div>
         <div class="w-1/2">
-          <div class="code mt-6"><pre><code>{{ sample2 }}</code></pre></div>
+          <div class="code">
+            <div class="flex justify-end">
+              <i class="material-icons pointer" (click)="copyExSample2.copy()">content_copy</i>
+            </div>
+            <pre ngxCopy #copyExSample2="copy"><code>{{ sample2 }}</code></pre>
+          </div>
         </div>
       </div>
 
-      <div class="flex items-start justify-center gap-4 mb-4">
+      <div class="font-bold mb-4 text-center">Image Tag - Like Instagram - Create Tag</div>
+      <div class="flex items-start justify-center gap-6 mb-6">
         <div class="w-1/2">
-          <div class="font-bold mb-2">Image Tag - Like Instagram - Create Tag</div>
           <div>
             <ngx-image-tagger 
               [tagger]="data.taggerCreate" 
@@ -100,13 +110,18 @@
           </div>
         </div>
         <div class="w-1/2">
-          <div class="code mt-6"><pre><code>{{ sample1 }}</code></pre></div>
+          <div class="code">
+            <div class="flex justify-end">
+              <i class="material-icons pointer" (click)="copyExSample3.copy()">content_copy</i>
+            </div>
+            <pre ngxCopy #copyExSample3="copy"><code>{{ sample3 }}</code></pre>
+          </div>
         </div>
       </div>
 
-      <div class="flex items-start justify-center gap-4 mb-4">
+      <div class="font-bold mb-4 text-center">Image Tag - Like Instagram - On Click Pin</div>
+      <div class="flex items-start justify-center gap-6 mb-6">
         <div class="w-1/2">
-          <div class="font-bold mb-2">Image Tag - Like Instagram - On Click Pin</div>
           <div>
             <ngx-image-tagger 
               [tagger]="data.taggerClick" 
@@ -130,7 +145,12 @@
           </div>
         </div>
         <div class="w-1/2">
-          <div class="code mt-6"><pre><code>{{ sample1 }}</code></pre></div>
+          <div class="code">
+            <div class="flex justify-end">
+              <i class="material-icons pointer" (click)="copyExSample4.copy()">content_copy</i>
+            </div>
+            <pre ngxCopy #copyExSample4="copy"><code>{{ sample4 }}</code></pre>
+          </div>
         </div>
       </div>
     </div>
