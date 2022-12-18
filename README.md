@@ -15,3 +15,7 @@ Indonesia People: [https://sociabuzz.com/dihaw](https://sociabuzz.com/dihaw)
 - [https://npm.ngodings.com/packages/ngx-image-tagger](ngx-image-tagger)
 - [https://npm.ngodings.com/packages/ngx-copy](ngx-copy)
 - [https://npm.ngodings.com/packages/ngx-currency-directive](ngx-currency-directive)
+
+## License
+
+MIT @ Ali Abdul Wahid
