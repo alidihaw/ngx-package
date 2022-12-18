@@ -36,7 +36,7 @@ import { NgxCopyDirective } from "@ngodings/ngx-copy";
 export class AppModule {}
 ```
 
-### Using 
+### Usage 
 
 From input
 

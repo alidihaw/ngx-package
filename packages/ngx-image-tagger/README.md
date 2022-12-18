@@ -36,7 +36,7 @@ import { NgxImageTaggerModule } from "@ngodings/ngx-image-tagger";
 export class AppModule {}
 ```
 
-### Using 
+### Usage 
 
 <p align="center">
   <img width="600" src="https://raw.githubusercontent.com/alidihaw/ngodings/master/packages/ngx-image-tagger/public/sample-image-tagger.png">
@@ -133,6 +133,26 @@ Image Tag - Like Instagram - On Click Pin
     (taggerChange)="data.taggerClick = $event">
 </ngx-image-tagger>
 ```
+
+### Option (Input & Output)
+
+| name | description | default value   |
+| :---------- | :------------------------------------------------------------ | :-------------- |
+| tagger | Value of the tagger. | refer TaggerModel |
+| isShowShop | Configuration Show/Hide Shop | false  |
+| isShowPrice | Unit of ratio.                                                | undefined       |
+| isShowLink | Theme color.                                                  | undefined       |
+| isAllowCreate | Display mode of the progress.                                 | 'indeterminate' |
+| placeholderCreateTitle | Show tooltip.<br>ex. value / max                              | false           |
+| placeholderLink | Diameter of the progress.                                     | 100             |
+| placeholderPrice | Diameter of the progress.                                     | 100             |
+| onShowTagMode | Diameter of the progress.                                     | 100             |
+| imageClassList | Diameter of the progress.                                     | 100             |
+| inputClassList | Diameter of the progress.                                     | 100             |
+| backgroundColor | Diameter of the progress.                                     | 100             |
+| borderColor | Diameter of the progress.                                     | 100             |
+| textColor | Diameter of the progress.                                     | 100             |
+| taggerChange | Diameter of the progress.                                     | 100             |
 
 ## Development
 

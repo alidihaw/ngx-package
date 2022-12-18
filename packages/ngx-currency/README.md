@@ -36,7 +36,7 @@ import { NgxCurrencyModule } from "@ngodings/ngx-currency";
 export class AppModule {}
 ```
 
-### Using 
+### Usage 
 
 ```html
 <input currencyMask formControlName="value" />
