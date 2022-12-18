@@ -40,7 +40,9 @@ export class AppModule {}
 
 ### Using 
 
-![Sample](https://raw.githubusercontent.com/alidihaw/ngodings/master/packages/ngx-image-tagger/public/sample-image-tagger.png)
+<p align="center">
+  <img width="300" src="https://raw.githubusercontent.com/alidihaw/ngodings/master/packages/ngx-image-tagger/public/sample-image-tagger.png">
+</p>
 
 Image Tag - Like Instagram - On Hover
 
