@@ -12,9 +12,9 @@ Indonesia People: [https://sociabuzz.com/dihaw](https://sociabuzz.com/dihaw)
 
 ## List Packages
 
-- [https://npm.ngodings.com/packages/ngx-image-tagger](ngx-image-tagger)
-- [https://npm.ngodings.com/packages/ngx-copy](ngx-copy)
-- [https://npm.ngodings.com/packages/ngx-currency-directive](ngx-currency-directive)
+- [ngx-image-tagger](https://npm.ngodings.com/packages/ngx-image-tagger)
+- [ngx-copy](https://npm.ngodings.com/packages/ngx-copy)
+- [ngx-currency-directive](https://npm.ngodings.com/packages/ngx-currency-directive)
 
 ## License
 
