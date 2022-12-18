@@ -1,24 +1,145 @@
-# NgxImageTagger
+# @ngodings/ngx-image-tagger
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
+## Demo - Angular v15
 
-## Code scaffolding
+[https://npm.ngodings.com/packages/ngx-image-tagger](https://npm.ngodings.com/packages/ngx-image-tagger)
 
-Run `ng generate component component-name --project ngx-image-tagger` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-image-tagger`.
-> Note: Don't forget to add `--project ngx-image-tagger` or else it will be added to the default project in your `angular.json` file. 
+## Support Me
 
-## Build
+If you like this package I will be happy that you support me on Buy me a coffee :) <br />
+Buy me coffe: [https://www.buymeacoffee.com/alidihaw](https://www.buymeacoffee.com/alidihaw) <br />
+Indonesia People: [https://sociabuzz.com/dihaw](https://sociabuzz.com/dihaw)
 
-Run `ng build ngx-image-tagger` to build the project. The build artifacts will be stored in the `dist/` directory.
+## About
 
-## Publishing
+## Getting Started
 
-After building your library with `ng build ngx-image-tagger`, go to the dist folder `cd dist/ngx-image-tagger` and run `npm publish`.
+### Installing and Importing
 
-## Running unit tests
+Install the package by command:
 
-Run `ng test ngx-image-tagger` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```sh
+ npm install @ngodings/ngx-image-tagger --save
+```
 
-## Further help
+Import the module
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```ts
+import { NgxImageTaggerModule } from "@ngodings/ngx-image-tagger";
+
+@NgModule({
+    imports: [
+        ...
+        NgxImageTaggerModule
+    ],
+    declarations: [...],
+    providers: [...]
+})
+export class AppModule {}
+```
+
+### Using 
+
+![Sample](https://raw.githubusercontent.com/alidihaw/ngodings/master/packages/ngx-image-tagger/public/sample-image-tagger.png)
+
+Image Tag - Like Instagram - On Hover
+
+```html
+<ngx-image-tagger 
+    [tagger]="data.taggerHover" 
+    [isShowShop]="true" 
+    [isShowPrice]="true" 
+    [isShowLink]="true" 
+    [isShowThumbnail]="true" 
+    [isAllowCreate]="false" 
+    [placeholderCreateTitle]="'Tag your product!'"
+    [placeholderLink]="'Link'"
+    [placeholderPrice]="'Price'"
+    [onShowTagMode]="'Hover'"
+    [imageClassList]="''"
+    [inputClassList]="''"
+    [backgroundColor]="'#03a9f4'"
+    [borderColor]="'#007ac1'"
+    [textColor]="'#ffffff'"
+    (taggerChange)="data.taggerHover = $event">
+</ngx-image-tagger>
+```
+
+Image Tag - Like Instagram - Click Shop
+
+```html
+<ngx-image-tagger 
+    [tagger]="data.tagger" 
+    [isShowShop]="true" 
+    [isShowPrice]="true" 
+    [isShowLink]="true" 
+    [isShowThumbnail]="true" 
+    [isAllowCreate]="false" 
+    [placeholderCreateTitle]="'Tag your product!'"
+    [placeholderLink]="'Link'"
+    [placeholderPrice]="'Price'"
+    [onShowTagMode]="'IconClick'"
+    [imageClassList]="''"
+    [inputClassList]="''"
+    [backgroundColor]="'#03a9f4'"
+    [borderColor]="'#007ac1'"
+    [textColor]="'#ffffff'"
+    (taggerChange)="data.tagger = $event">
+</ngx-image-tagger>
+```
+
+Image Tag - Like Instagram - Create Tag
+
+```html
+<ngx-image-tagger 
+    [tagger]="data.taggerCreate" 
+    [isShowShop]="false" 
+    [isShowPrice]="true" 
+    [isShowLink]="true" 
+    [isShowThumbnail]="true" 
+    [isAllowCreate]="true" 
+    [placeholderCreateTitle]="'Tag your product!'"
+    [placeholderLink]="'Link'"
+    [placeholderPrice]="'Price'"
+    [onShowTagMode]="'IconClick'"
+    [imageClassList]="''"
+    [inputClassList]="''"
+    [backgroundColor]="'#03a9f4'"
+    [borderColor]="'#007ac1'"
+    [textColor]="'#ffffff'"
+    (taggerChange)="data.taggerCreate = $event">
+</ngx-image-tagger>
+```
+
+Image Tag - Like Instagram - On Click Pin
+
+```html
+<ngx-image-tagger 
+    [tagger]="data.taggerClick" 
+    [isShowShop]="true" 
+    [isShowPrice]="true" 
+    [isShowLink]="true" 
+    [isShowThumbnail]="true" 
+    [isAllowCreate]="false" 
+    [placeholderCreateTitle]="'Tag your product!'"
+    [placeholderLink]="'Link'"
+    [placeholderPrice]="'Price'"
+    [onShowTagMode]="'Click'"
+    [imageClassList]="''"
+    [inputClassList]="''"
+    [backgroundColor]="'#03a9f4'"
+    [borderColor]="'#007ac1'"
+    [textColor]="'#ffffff'"
+    (taggerChange)="data.taggerClick = $event">
+</ngx-image-tagger>
+```
+
+## Development
+
+### Prepare your environment
+* Install [Node.js](http://nodejs.org/) and NPM
+* Install local dev dependencies: `npm install` while current directory is this repo
+
+## License
+
+MIT @ Ali Abdul Wahid
