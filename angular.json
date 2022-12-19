@@ -129,6 +129,39 @@
         }
       }
     },
+    "ngx-rupiah": {
+      "projectType": "library",
+      "root": "packages/ngx-rupiah",
+      "sourceRoot": "packages/ngx-rupiah/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "packages/ngx-rupiah/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "packages/ngx-rupiah/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "packages/ngx-rupiah/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "packages/ngx-rupiah/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    },
     "ngx-currency": {
       "projectType": "library",
       "root": "packages/ngx-currency",

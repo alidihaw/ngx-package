@@ -13,8 +13,8 @@ import { AppHelper } from 'src/app/app.helper';
 export class HomeComponent implements OnInit {
     color = ColorStandard;
     size = SizeStandard;
-   
-    packages: {name: string, url: string}[] = [
+
+    packages: { name: string, url: string }[] = [
         {
             name: 'ngx-image-tagger',
             url: 'packages/ngx-image-tagger'
@@ -26,6 +26,10 @@ export class HomeComponent implements OnInit {
         {
             name: 'ngx-currency',
             url: 'packages/ngx-currency'
+        },
+        {
+            name: 'ngx-rupiah',
+            url: 'packages/ngx-rupiah'
         },
     ]
     constructor(public appHelper: AppHelper, public appData: AppData,) {

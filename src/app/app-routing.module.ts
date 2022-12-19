@@ -13,6 +13,12 @@ const routes: Routes = [
     canActivate: [],
     children: [
       {
+        path: 'ngx-rupiah',
+        loadChildren: () =>
+          import('./packages/ngx-rupiah/ngx-rupiah.module').then((m) => m.PackageNgxRupiahModule),
+        canActivate: []
+      },
+      {
         path: 'ngx-currency',
         loadChildren: () =>
           import('./packages/ngx-currency/ngx-currency.module').then((m) => m.PackageNgxCurrencyModule),
