@@ -31,6 +31,10 @@ export class HomeComponent implements OnInit {
             name: 'ngx-rupiah',
             url: 'packages/ngx-rupiah'
         },
+        {
+            name: 'ngx-whatsapp',
+            url: 'packages/ngx-whatsapp'
+        },
     ]
     constructor(public appHelper: AppHelper, public appData: AppData,) {
 

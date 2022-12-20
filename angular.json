@@ -116,16 +116,6 @@
             }
           },
           "defaultConfiguration": "production"
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "tsConfig": "packages/ngx-image-tagger/tsconfig.spec.json",
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ]
-          }
         }
       }
     },
@@ -149,16 +139,6 @@
             }
           },
           "defaultConfiguration": "production"
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "tsConfig": "packages/ngx-rupiah/tsconfig.spec.json",
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ]
-          }
         }
       }
     },
@@ -182,16 +162,6 @@
             }
           },
           "defaultConfiguration": "production"
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "tsConfig": "packages/ngx-currency/tsconfig.spec.json",
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ]
-          }
         }
       }
     },
@@ -215,18 +185,31 @@
               }
             },
             "defaultConfiguration": "production"
-          },
-          "test": {
-            "builder": "@angular-devkit/build-angular:karma",
-            "options": {
-              "tsConfig": "packages/ngx-copy/tsconfig.spec.json",
-              "polyfills": [
-                "zone.js",
-                "zone.js/testing"
-              ]
+          }
+        }
+      },
+      "ngx-whatsapp": {
+          "projectType": "library",
+          "root": "packages/ngx-whatsapp",
+          "sourceRoot": "packages/ngx-whatsapp/src",
+          "prefix": "lib",
+          "architect": {
+            "build": {
+              "builder": "@angular-devkit/build-angular:ng-packagr",
+              "options": {
+                "project": "packages/ngx-whatsapp/ng-package.json"
+              },
+              "configurations": {
+                "production": {
+                  "tsConfig": "packages/ngx-whatsapp/tsconfig.lib.prod.json"
+                },
+                "development": {
+                  "tsConfig": "packages/ngx-whatsapp/tsconfig.lib.json"
+                }
+              },
+              "defaultConfiguration": "production"
             }
           }
         }
-      }
   }
 }

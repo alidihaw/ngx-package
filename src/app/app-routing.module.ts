@@ -36,6 +36,12 @@ const routes: Routes = [
           import('./packages/ngx-image-tagger/ngx-image-tagger.module').then((m) => m.PackageNgxImageTaggerDirectiveModule),
         canActivate: []
       },
+      {
+        path: 'ngx-whatsapp',
+        loadChildren: () =>
+          import('./packages/ngx-whatsapp/ngx-whatsapp.module').then((m) => m.PackageNgxWhatsappDirectiveModule),
+        canActivate: []
+      },
     ]
   },
 ];

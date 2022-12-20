@@ -1,0 +1,12 @@
+@import '~material-icons/iconfont/material-icons.css';
+
+ngx-whatsapp {
+  font-family: inherit;
+  .whatsapp {
+      position: fixed;
+      z-index: 100;
+      img {
+          width: 40px;
+      }
+  }
+}

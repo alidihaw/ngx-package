@@ -16,6 +16,7 @@ Indonesia People: [https://sociabuzz.com/dihaw](https://sociabuzz.com/dihaw)
 - [ngx-copy](https://npm.ngodings.com/packages/ngx-copy)
 - [ngx-currency](https://npm.ngodings.com/packages/ngx-currency)
 - [ngx-rupiah](https://npm.ngodings.com/packages/ngx-rupiah)
+- [ngx-whatsapp](https://npm.ngodings.com/packages/ngx-whatsapp)
 
 ## License
 
