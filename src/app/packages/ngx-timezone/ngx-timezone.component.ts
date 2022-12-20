@@ -33,7 +33,7 @@ export class PackageNgxTimezoneComponent implements OnInit {
 
     sample3 = `{{ 'Asia/Jakarta'| timezoneToCountryPipe | async }}`;
 
-    sample4 = `await this.timezoneService.getListTimezoneFromCountry(this.data.country);`;
+    sample4 = `await this.timezoneService.getListTimezoneFromCountry('Indonesia');`;
 
     sample5 = `await this.timezoneService.getListTimezones();`;
 

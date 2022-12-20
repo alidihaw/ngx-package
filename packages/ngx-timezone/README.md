@@ -65,7 +65,7 @@ await this.timezoneService.convertTimezoneToCountry('Asia/Jakarta');
 ## List Timezones from Country
 
 ```ts
-await this.timezoneService.getListTimezoneFromCountry(this.data.country)
+await this.timezoneService.getListTimezoneFromCountry('Indonesia')
 ```
 
 ## List Timezones
