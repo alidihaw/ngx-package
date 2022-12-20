@@ -48,6 +48,12 @@ const routes: Routes = [
           import('./packages/ngx-scroll-to-top/ngx-scroll-to-top.module').then((m) => m.PackageNgxScrollToTopModule),
         canActivate: []
       },
+      {
+        path: 'ngx-timezone',
+        loadChildren: () =>
+          import('./packages/ngx-timezone/ngx-timezone.module').then((m) => m.PackageNgxTimezoneModule),
+        canActivate: []
+      },
     ]
   },
 ];

@@ -230,6 +230,29 @@
           "defaultConfiguration": "production"
         }
       }
+    },
+    "ngx-timezone": {
+      "projectType": "library",
+      "root": "packages/ngx-timezone",
+      "sourceRoot": "packages/ngx-timezone/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "packages/ngx-timezone/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "packages/ngx-timezone/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "packages/ngx-timezone/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        }
+      }
     }
   }
 }
