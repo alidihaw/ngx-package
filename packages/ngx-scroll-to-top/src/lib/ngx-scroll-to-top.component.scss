@@ -1,0 +1,25 @@
+@import '~material-icons/iconfont/material-icons.css';
+
+ngx-scroll-to-top {
+  font-family: inherit;
+  .to-top {
+      position: fixed;
+      z-index: 100;
+      background-color: black;
+      height: 36px;
+      width: 36px;
+      text-align: center;
+      vertical-align: middle;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+      i {
+          color: white;
+          font-size: 20px;
+          margin-top: 7px;
+      }
+
+      i:hover {
+          color: #f5f5f5;
+      }
+  }
+}

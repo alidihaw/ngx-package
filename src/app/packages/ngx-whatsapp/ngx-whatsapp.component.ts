@@ -9,7 +9,7 @@ import { AppData } from 'src/app/app.data';
     styleUrls: ['./ngx-whatsapp.component.scss'],
     encapsulation: ViewEncapsulation.None,
 })
-export class PackageNgxWhatsappDirectiveComponent implements OnInit {
+export class PackageNgxWhatsappComponent implements OnInit {
 
     sample1 =
         `<ngx-whatsapp [phoneNumber]="'+6285280871948'" [message]="'Hi, i need help about ... '" [bottomPosition]="'100px'" [rightPosition]="'20px'"></ngx-whatsapp>`;

@@ -1,0 +1,30 @@
+{
+  "name": "@ngodings/ngx-scroll-to-top",
+  "version": "15.0.1",
+  "peerDependencies": {
+    "@angular/common": "^15.0.0",
+    "@angular/core": "^15.0.0",
+    "material-icons": "^1.13.1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "homepage": "https://npm.ngodings.com/packages/ngx-scroll-to-top",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alidihaw/ngodings/tree/master/packages/ngx-scroll-to-top"
+  },
+  "keywords": [
+    "angular",
+    "angular2",
+    "angular4",
+    "angular9",
+    "angular15",
+    "to-top",
+    "floating",
+    "scroll",
+    "scroll-to-top",
+    "scroll-to-top-floating"
+  ]
+}

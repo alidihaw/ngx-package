@@ -35,6 +35,10 @@ export class HomeComponent implements OnInit {
             name: 'ngx-whatsapp',
             url: 'packages/ngx-whatsapp'
         },
+        {
+            name: 'ngx-scroll-to-top',
+            url: 'packages/ngx-scroll-to-top'
+        },
     ]
     constructor(public appHelper: AppHelper, public appData: AppData,) {
 

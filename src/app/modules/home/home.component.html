@@ -24,7 +24,7 @@
 
     <div class="grid grid-cols-4 gap-6 mb-10">
         <ng-container *ngFor="let item of packages">
-            <div class="card-standard pointer" (click)="appHelper.goToURL(item.url)">
+            <div class="card-standard pointer card-hover" (click)="appHelper.goToURL(item.url)">
                 {{ item.name }}
             </div>
         </ng-container>

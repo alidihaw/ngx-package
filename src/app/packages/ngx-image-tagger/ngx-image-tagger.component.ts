@@ -10,7 +10,7 @@ import { AppData } from 'src/app/app.data';
     styleUrls: ['./ngx-image-tagger.component.scss'],
     encapsulation: ViewEncapsulation.None,
 })
-export class PackageNgxImageTaggerDirectiveComponent implements OnInit {
+export class PackageNgxImageTaggerComponent implements OnInit {
     tagger = {
         idParent: 'parent-image-tagger-1',
         id: 'image-tagger-1',
@@ -70,7 +70,7 @@ export class PackageNgxImageTaggerDirectiveComponent implements OnInit {
                 {
                     id: '3',
                     y: 70.6767,
-                    x:  44.6914,
+                    x: 44.6914,
                     name: 'Stopwatch',
                     price: 125,
                     url: 'https://shopee.co.id',
@@ -82,7 +82,7 @@ export class PackageNgxImageTaggerDirectiveComponent implements OnInit {
                 {
                     id: '4',
                     y: 23.3083,
-                    x:  75.5556,
+                    x: 75.5556,
                     name: 'Book',
                     price: 4,
                     url: 'https://shopee.co.id',
@@ -94,7 +94,7 @@ export class PackageNgxImageTaggerDirectiveComponent implements OnInit {
                 {
                     id: '5',
                     y: 23.3083,
-                    x:  49.8765,
+                    x: 49.8765,
                     name: 'Tie',
                     price: 12,
                     url: 'https://shopee.co.id',
@@ -138,7 +138,7 @@ export class PackageNgxImageTaggerDirectiveComponent implements OnInit {
                 {
                     id: 'hover-3',
                     y: 70.6767,
-                    x:  44.6914,
+                    x: 44.6914,
                     name: 'Stopwatch',
                     price: 125,
                     url: 'https://shopee.co.id',
@@ -150,7 +150,7 @@ export class PackageNgxImageTaggerDirectiveComponent implements OnInit {
                 {
                     id: 'hover-4',
                     y: 23.3083,
-                    x:  75.5556,
+                    x: 75.5556,
                     name: 'Book',
                     price: 4,
                     url: 'https://shopee.co.id',
@@ -162,7 +162,7 @@ export class PackageNgxImageTaggerDirectiveComponent implements OnInit {
                 {
                     id: 'hover-5',
                     y: 23.3083,
-                    x:  49.8765,
+                    x: 49.8765,
                     name: 'Tie',
                     price: 12,
                     url: 'https://shopee.co.id',
@@ -204,8 +204,8 @@ export class PackageNgxImageTaggerDirectiveComponent implements OnInit {
         }
     };
 
-sample1 = 
-`<ngx-image-tagger 
+    sample1 =
+        `<ngx-image-tagger 
     [tagger]="data.taggerHover" 
     [isShowShop]="true" 
     [isShowPrice]="true" 
@@ -223,8 +223,8 @@ sample1 =
     [textColor]="'#ffffff'"
     (taggerChange)="data.taggerHover = $event">
 </ngx-image-tagger>`;
-sample2 = 
-`<ngx-image-tagger 
+    sample2 =
+        `<ngx-image-tagger 
     [tagger]="data.tagger" 
     [isShowShop]="true" 
     [isShowPrice]="true" 
@@ -242,8 +242,8 @@ sample2 =
     [textColor]="'#ffffff'"
     (taggerChange)="data.tagger = $event">
 </ngx-image-tagger>`;
-sample3 = 
-`<ngx-image-tagger 
+    sample3 =
+        `<ngx-image-tagger 
     [tagger]="data.taggerCreate" 
     [isShowShop]="false" 
     [isShowPrice]="true" 
@@ -261,8 +261,8 @@ sample3 =
     [textColor]="'#ffffff'"
     (taggerChange)="data.taggerCreate = $event">
 </ngx-image-tagger>`;
-sample4 = 
-`<ngx-image-tagger 
+    sample4 =
+        `<ngx-image-tagger 
     [tagger]="data.taggerClick" 
     [isShowShop]="true" 
     [isShowPrice]="true" 

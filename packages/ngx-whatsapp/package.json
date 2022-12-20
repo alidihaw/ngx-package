@@ -1,10 +1,9 @@
 {
   "name": "@ngodings/ngx-whatsapp",
-  "version": "15.0.1",
+  "version": "15.0.2",
   "peerDependencies": {
     "@angular/common": "^15.0.0",
-    "@angular/core": "^15.0.0",
-    "material-icons": "^1.13.1"
+    "@angular/core": "^15.0.0"
   },
   "license": "MIT",
   "dependencies": {

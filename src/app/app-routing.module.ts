@@ -33,13 +33,19 @@ const routes: Routes = [
       {
         path: 'ngx-image-tagger',
         loadChildren: () =>
-          import('./packages/ngx-image-tagger/ngx-image-tagger.module').then((m) => m.PackageNgxImageTaggerDirectiveModule),
+          import('./packages/ngx-image-tagger/ngx-image-tagger.module').then((m) => m.PackageNgxImageTaggerModule),
         canActivate: []
       },
       {
         path: 'ngx-whatsapp',
         loadChildren: () =>
-          import('./packages/ngx-whatsapp/ngx-whatsapp.module').then((m) => m.PackageNgxWhatsappDirectiveModule),
+          import('./packages/ngx-whatsapp/ngx-whatsapp.module').then((m) => m.PackageNgxWhatsappModule),
+        canActivate: []
+      },
+      {
+        path: 'ngx-scroll-to-top',
+        loadChildren: () =>
+          import('./packages/ngx-scroll-to-top/ngx-scroll-to-top.module').then((m) => m.PackageNgxScrollToTopModule),
         canActivate: []
       },
     ]

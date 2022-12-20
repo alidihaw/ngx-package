@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { PackageNgxImageTaggerDirectiveComponent } from './ngx-image-tagger.component';
+import { PackageNgxImageTaggerComponent } from './ngx-image-tagger.component';
 import { FormsModule } from '@angular/forms';
 import { NgxImageTaggerModule } from 'packages/ngx-image-tagger/src/public-api';
 import { NgxCopyDirective } from 'packages/ngx-copy/src/public-api';
@@ -9,13 +9,13 @@ import { NgxCopyDirective } from 'packages/ngx-copy/src/public-api';
 const routes: Routes = [
     {
         path: '',
-        component: PackageNgxImageTaggerDirectiveComponent
+        component: PackageNgxImageTaggerComponent
     },
 ];
 
 @NgModule({
     declarations: [
-        PackageNgxImageTaggerDirectiveComponent
+        PackageNgxImageTaggerComponent
     ],
     imports: [
         RouterModule.forChild(routes),
@@ -30,4 +30,4 @@ const routes: Routes = [
     schemas: [
     ],
 })
-export class PackageNgxImageTaggerDirectiveModule { }
+export class PackageNgxImageTaggerModule { }

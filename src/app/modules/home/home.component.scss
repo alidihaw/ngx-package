@@ -8,4 +8,9 @@ ngodings-home {
         align-items: center;
         border-radius: 10px;
     }
+
+    .card-hover:hover {
+        color: #2196f3;
+        transition: all 0.4s ease;
+    }
 }

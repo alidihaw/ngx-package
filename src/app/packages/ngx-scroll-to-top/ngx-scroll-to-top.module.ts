@@ -1,28 +1,28 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { PackageNgxWhatsappComponent } from './ngx-whatsapp.component';
+import { PackageNgxScrollToTopComponent } from './ngx-scroll-to-top.component';
 import { FormsModule } from '@angular/forms';
-import { NgxWhatsappModule } from 'packages/ngx-whatsapp/src/public-api';
+import { NgxScrollToTopModule } from 'packages/ngx-scroll-to-top/src/public-api';
 import { NgxCopyDirective } from 'packages/ngx-copy/src/public-api';
 
 const routes: Routes = [
     {
         path: '',
-        component: PackageNgxWhatsappComponent
+        component: PackageNgxScrollToTopComponent
     },
 ];
 
 @NgModule({
     declarations: [
-        PackageNgxWhatsappComponent
+        PackageNgxScrollToTopComponent
     ],
     imports: [
         RouterModule.forChild(routes),
         CommonModule,
         FormsModule,
 
-        NgxWhatsappModule,
+        NgxScrollToTopModule,
 
         NgxCopyDirective,
     ],
@@ -30,4 +30,4 @@ const routes: Routes = [
     schemas: [
     ],
 })
-export class PackageNgxWhatsappModule { }
+export class PackageNgxScrollToTopModule { }
