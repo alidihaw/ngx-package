@@ -1,8 +1,8 @@
-# @ngodings/ngx-timezone
+# @ngodings/ngx-ip
 
 ## Demo - Angular v15
 
-[https://npm.ngodings.com/packages/ngx-timezone](https://npm.ngodings.com/packages/ngx-timezone)
+[https://npm.ngodings.com/packages/ngx-ip](https://npm.ngodings.com/packages/ngx-ip)
 
 ## Support Me
 
@@ -17,23 +17,23 @@ Indonesia People: [https://sociabuzz.com/dihaw](https://sociabuzz.com/dihaw)
 Install the package by command:
 
 ```sh
- npm install @ngodings/ngx-timezone --save
+ npm install @ngodings/ngx-ip --save
 ```
 
 Import the module
 
 ```ts
-import { NgxTimezoneModule, TimezoneService } from "@ngodings/ngx-timezone";
+import { NgxIPModule, IPService } from 'packages/ngx-ip/src/public-api';
 
 @NgModule({
     imports: [
         ...
-        NgxTimezoneModule
+        NgxIPModule
     ],
     declarations: [...],
     providers: [
         ...
-        TimezoneService
+        IPService
     ]
 })
 export class AppModule {}
@@ -44,37 +44,13 @@ export class AppModule {}
 Import the service
 
 ```ts
-constructor(private timezoneService: TimezoneService,) {}
+constructor(private ipService: IPService,) {}
 ```
 
-## Your timezone
+## Get IP
 
 ```ts
-this.timezoneService.timezone;
-```
-
-## Convert Timezone to Country
-
-```ts
-await this.timezoneService.convertTimezoneToCountry('Asia/Jakarta');
-```
-
-## Convert Timezone to Country - Pipe
-
-```html
-{{ 'Asia/Jakarta'| timezoneToCountryPipe | async }};
-```
-
-## List Timezones from Country
-
-```ts
-await this.timezoneService.getListTimezoneFromCountry('Indonesia')
-```
-
-## List Timezones
-
-```ts
-await this.timezoneService.getListTimezones()
+this.ipService.getIP()
 ```
 
 ## Development

@@ -47,6 +47,10 @@ export class HomeComponent implements OnInit {
             name: 'ngx-country',
             url: 'packages/ngx-country'
         },
+        {
+            name: 'ngx-ip',
+            url: 'packages/ngx-ip'
+        },
     ]
     constructor(public appHelper: AppHelper, public appData: AppData,) {
 

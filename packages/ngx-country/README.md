@@ -23,7 +23,7 @@ Install the package by command:
 Import the module
 
 ```ts
-import { NgxCountryModule } from "@ngodings/ngx-country";
+import { NgxCountryModule, CountryService } from "@ngodings/ngx-country";
 
 @NgModule({
     imports: [
@@ -31,7 +31,10 @@ import { NgxCountryModule } from "@ngodings/ngx-country";
         NgxCountryModule
     ],
     declarations: [...],
-    providers: [...]
+    providers: [
+        ...
+        CountryService
+    ]
 })
 export class AppModule {}
 ```

@@ -276,6 +276,29 @@
           "defaultConfiguration": "production"
         }
       }
+    },
+    "ngx-ip": {
+      "projectType": "library",
+      "root": "packages/ngx-ip",
+      "sourceRoot": "packages/ngx-ip/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "packages/ngx-ip/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "packages/ngx-ip/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "packages/ngx-ip/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        }
+      }
     }
   }
 }

@@ -60,6 +60,12 @@ const routes: Routes = [
           import('./packages/ngx-country/ngx-country.module').then((m) => m.PackageNgxCountryModule),
         canActivate: []
       },
+      {
+        path: 'ngx-ip',
+        loadChildren: () =>
+          import('./packages/ngx-ip/ngx-ip.module').then((m) => m.PackageNgxIPModule),
+        canActivate: []
+      },
     ]
   },
 ];
