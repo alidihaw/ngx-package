@@ -16,16 +16,20 @@ export class HomeComponent implements OnInit {
 
     packages: { name: string, url: string }[] = [
         {
+            name: 'ngx-timezone',
+            url: 'packages/ngx-timezone'
+        },
+        {
             name: 'ngx-whatsapp',
             url: 'packages/ngx-whatsapp'
         },
         {
-            name: 'ngx-scroll-to-top',
-            url: 'packages/ngx-scroll-to-top'
-        },
-        {
             name: 'ngx-copy',
             url: 'packages/ngx-copy'
+        },
+        {
+            name: 'ngx-scroll-to-top',
+            url: 'packages/ngx-scroll-to-top'
         },
         {
             name: 'ngx-image-tagger',
@@ -40,8 +44,8 @@ export class HomeComponent implements OnInit {
             url: 'packages/ngx-rupiah'
         },
         {
-            name: 'ngx-timezone',
-            url: 'packages/ngx-timezone'
+            name: 'ngx-country',
+            url: 'packages/ngx-country'
         },
     ]
     constructor(public appHelper: AppHelper, public appData: AppData,) {

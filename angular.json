@@ -253,6 +253,29 @@
           "defaultConfiguration": "production"
         }
       }
+    },
+    "ngx-country": {
+      "projectType": "library",
+      "root": "packages/ngx-country",
+      "sourceRoot": "packages/ngx-country/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "packages/ngx-country/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "packages/ngx-country/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "packages/ngx-country/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        }
+      }
     }
   }
 }

@@ -54,6 +54,12 @@ const routes: Routes = [
           import('./packages/ngx-timezone/ngx-timezone.module').then((m) => m.PackageNgxTimezoneModule),
         canActivate: []
       },
+      {
+        path: 'ngx-country',
+        loadChildren: () =>
+          import('./packages/ngx-country/ngx-country.module').then((m) => m.PackageNgxCountryModule),
+        canActivate: []
+      },
     ]
   },
 ];

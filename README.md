@@ -12,13 +12,14 @@ Indonesia People: [https://sociabuzz.com/dihaw](https://sociabuzz.com/dihaw)
 
 ## List Packages
 
+- [ngx-timezone](https://npm.ngodings.com/packages/ngx-timezone)
 - [ngx-whatsapp](https://npm.ngodings.com/packages/ngx-whatsapp)
-- [ngx-scroll-to-top](https://npm.ngodings.com/packages/ngx-scroll-to-top)
 - [ngx-copy](https://npm.ngodings.com/packages/ngx-copy)
+- [ngx-scroll-to-top](https://npm.ngodings.com/packages/ngx-scroll-to-top)
 - [ngx-image-tagger](https://npm.ngodings.com/packages/ngx-image-tagger)
 - [ngx-currency](https://npm.ngodings.com/packages/ngx-currency)
 - [ngx-rupiah](https://npm.ngodings.com/packages/ngx-rupiah)
-- [ngx-timezone](https://npm.ngodings.com/packages/ngx-timezone)
+- [ngx-country](https://npm.ngodings.com/packages/ngx-country)
 
 ## License
 

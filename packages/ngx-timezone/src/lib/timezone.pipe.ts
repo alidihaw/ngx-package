@@ -4,7 +4,7 @@ import { TimezoneService } from './timezone.service';
 
 @Pipe({ name: 'timezoneToCountryPipe' })
 export class TimezoneToCountryPipe implements PipeTransform {
-    constructor(private trmezoneService: TimezoneService) {
+    constructor(private timezoneService: TimezoneService) {
     }
 
     public async transform(value: string): Promise<string> {
@@ -12,6 +12,6 @@ export class TimezoneToCountryPipe implements PipeTransform {
             return '-';
         }
 
-        return await this.trmezoneService.convertTimezoneToCountry(value);
+        return await this.timezoneService.convertTimezoneToCountry(value);
     }
 }

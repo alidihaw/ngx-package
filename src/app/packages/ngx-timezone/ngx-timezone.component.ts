@@ -18,15 +18,6 @@ export class PackageNgxTimezoneComponent implements OnInit {
         timezonesAll: {},
     };
 
-    terbilangValue = {
-        value: 1250000,
-        valueString: '',
-        value2: 25000000,
-        valueString2: '',
-        value3: 5000,
-        valueString3: '',
-    }
-
     sample1 = `this.timezoneService.timezone;`;
 
     sample2 = `await this.timezoneService.convertTimezoneToCountry('Asia/Jakarta');`;

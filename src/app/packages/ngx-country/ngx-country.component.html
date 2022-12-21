@@ -1,0 +1,244 @@
+<div class="p-layout mt-10 text-center">
+  <div style="height: 35px"></div>
+  <div class="pt-10 pb-10">
+    <div class="flex items-center justify-center">
+      <img src="assets/angular.png" alt="Angular" style="width: 100px">
+    </div>
+      <div class="text-2xl md:text-4xl">
+        ngx-country
+      </div>
+      <div class="text-2xl mt-2">
+        {{ appData.version }} - <a href="https://github.com/alidihaw/ngodings/tree/master/packages/ngx-country" target="_blank">Installation</a>
+      </div>
+    </div>
+    <div style="height: 35px"></div>
+
+    <div class="content">
+
+      <div class="mt-6">
+        <b>
+          Get All Countries
+        </b>
+      </div>
+      <div class="flex items-start gap-6 mt-4 w-full">
+        <div class="w-1/4 flex items-left flex-col justify-center">
+          <div class="text-left">
+            <div class="mt-4" style="max-height: 200px; overflow-y: auto;">
+              <ng-container *ngFor="let country of data.countries">
+                <div class="">{{ country.country }} ({{ country.abbreviation }})</div>
+              </ng-container>
+            </div>
+          </div>
+        </div>
+        <div class="w-3/4">
+          <div class="code mt-2">
+            <div class="flex justify-end">
+              <i class="material-icons pointer" (click)="copyExSample1.copy()">content_copy</i>
+            </div>
+            <pre ngxCopy #copyExSample1="copy"><code>{{ sample1 }}</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-6">
+        <b>
+          Get All Country Codes
+        </b>
+      </div>
+      <div class="flex items-start gap-6 mt-4 w-full">
+        <div class="w-1/4 flex items-left flex-col justify-center">
+          <div class="text-left">
+            <div class="mt-4" style="max-height: 200px; overflow-y: auto;">
+              <ng-container *ngFor="let country of data.countryCodes">
+                <div class="">{{ country.name }} ({{ country.code }})</div>
+              </ng-container>
+            </div>
+          </div>
+        </div>
+        <div class="w-3/4">
+          <div class="code mt-2">
+            <div class="flex justify-end">
+              <i class="material-icons pointer" (click)="copyExSample2.copy()">content_copy</i>
+            </div>
+            <pre ngxCopy #copyExSample2="copy"><code>{{ sample2 }}</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-6">
+        <b>
+          Get Abbreviation By Country
+        </b>
+      </div>
+      <div class="flex items-start gap-6 mt-4 w-full">
+        <div class="w-1/4 flex items-left flex-col justify-center">
+    
+          <div class="text-left">
+            {{ data.country }} = {{ data.abbreviation }}
+          </div>
+        </div>
+        <div class="w-3/4">
+          <div class="code mt-2">
+            <div class="flex justify-end">
+              <i class="material-icons pointer" (click)="copyExSample3.copy()">content_copy</i>
+            </div>
+            <pre ngxCopy #copyExSample3="copy"><code>{{ sample3 }}</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-6">
+        <b>
+          Get Code By Country
+        </b>
+      </div>
+      <div class="flex items-start gap-6 mt-4 w-full">
+        <div class="w-1/4 flex items-left flex-col justify-center">
+    
+          <div class="text-left">
+            {{ data.country }} = {{ data.code }}
+          </div>
+        </div>
+        <div class="w-3/4">
+          <div class="code mt-2">
+            <div class="flex justify-end">
+              <i class="material-icons pointer" (click)="copyExSample4.copy()">content_copy</i>
+            </div>
+            <pre ngxCopy #copyExSample4="copy"><code>{{ sample4 }}</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-6">
+        <b>
+          Get Country By Code
+        </b>
+      </div>
+      <div class="flex items-start gap-6 mt-4 w-full">
+        <div class="w-1/4 flex items-left flex-col justify-center">
+    
+          <div class="text-left">
+            {{ data.code }} = {{ data.country }}
+          </div>
+        </div>
+        <div class="w-3/4">
+          <div class="code mt-2">
+            <div class="flex justify-end">
+              <i class="material-icons pointer" (click)="copyExSample5.copy()">content_copy</i>
+            </div>
+            <pre ngxCopy #copyExSample5="copy"><code>{{ sample5 }}</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-6">
+        <b>
+          Get Country By Abbreviation
+        </b>
+      </div>
+      <div class="flex items-start gap-6 mt-4 w-full">
+        <div class="w-1/4 flex items-left flex-col justify-center">
+    
+          <div class="text-left">
+            {{ data.abbreviation }} = {{ data.country }}
+          </div>
+        </div>
+        <div class="w-3/4">
+          <div class="code mt-2">
+            <div class="flex justify-end">
+              <i class="material-icons pointer" (click)="copyExSample6.copy()">content_copy</i>
+            </div>
+            <pre ngxCopy #copyExSample6="copy"><code>{{ sample6 }}</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-6">
+        <b>
+          Get Country By Abbreviation - Pipe
+        </b>
+      </div>
+      <div class="flex items-start gap-6 mt-4 w-full">
+        <div class="w-1/4 flex items-left flex-col justify-center">
+    
+          <div class="text-left">
+            {{ data.abbreviation }} = {{ data.country }}
+          </div>
+        </div>
+        <div class="w-3/4">
+          <div class="code mt-2">
+            <div class="flex justify-end">
+              <i class="material-icons pointer" (click)="copyExSample7.copy()">content_copy</i>
+            </div>
+            <pre ngxCopy #copyExSample7="copy"><code>{{ sample7 }}</code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="mt-6">
+        <b>
+          Get Abbreviation By Country - Pipe
+        </b>
+      </div>
+      <div class="flex items-start gap-6 mt-4 w-full">
+        <div class="w-1/4 flex items-left flex-col justify-center">
+    
+          <div class="text-left">
+            {{ data.country }} = {{ data.abbreviation }}
+          </div>
+        </div>
+        <div class="w-3/4">
+          <div class="code mt-2">
+            <div class="flex justify-end">
+              <i class="material-icons pointer" (click)="copyExSample8.copy()">content_copy</i>
+            </div>
+            <pre ngxCopy #copyExSample8="copy"><code>{{ sample8 }}</code></pre>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-6">
+        <b>
+          Get Country By Code - Pipe
+        </b>
+      </div>
+      <div class="flex items-start gap-6 mt-4 w-full">
+        <div class="w-1/4 flex items-left flex-col justify-center">
+    
+          <div class="text-left">
+            {{ data.code }} = {{ data.country }}
+          </div>
+        </div>
+        <div class="w-3/4">
+          <div class="code mt-2">
+            <div class="flex justify-end">
+              <i class="material-icons pointer" (click)="copyExSample9.copy()">content_copy</i>
+            </div>
+            <pre ngxCopy #copyExSample9="copy"><code>{{ sample9 }}</code></pre>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-6">
+        <b>
+          Get Code By Country - Pipe
+        </b>
+      </div>
+      <div class="flex items-start gap-6 mt-4 w-full">
+        <div class="w-1/4 flex items-left flex-col justify-center">
+    
+          <div class="text-left">
+            {{ data.country }} = {{ data.code }}
+          </div>
+        </div>
+        <div class="w-3/4">
+          <div class="code mt-2">
+            <div class="flex justify-end">
+              <i class="material-icons pointer" (click)="copyExSample10.copy()">content_copy</i>
+            </div>
+            <pre ngxCopy #copyExSample10="copy"><code>{{ sample10 }}</code></pre>
+          </div>
+        </div>
+      </div>
+
+    </div>
+</div>

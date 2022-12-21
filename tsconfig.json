@@ -12,12 +12,6 @@
       "@angular/*": [
          "./node_modules/@angular/*"
       ],
-      "my-lib": [
-        "dist/my-lib"
-      ],
-      "ngx-image-tagger": [
-        "dist/ngx-image-tagger"
-      ],
       "@providers/*": ["src/app/providers/*"],
       "@directives/*": ["src/app/directives/*"],
       "@modules/*": ["src/app/modules/*"],
