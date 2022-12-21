@@ -48,8 +48,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "10kb",
-                  "maximumError": "15kb"
+                  "maximumWarning": "50kb",
+                  "maximumError": "100kb"
                 }
               ],
               "fileReplacements": [{
@@ -294,6 +294,29 @@
             },
             "development": {
               "tsConfig": "packages/ngx-ip/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        }
+      }
+    },
+    "ngx-device": {
+      "projectType": "library",
+      "root": "packages/ngx-device",
+      "sourceRoot": "packages/ngx-device/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "packages/ngx-device/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "packages/ngx-device/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "packages/ngx-device/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"

@@ -66,6 +66,12 @@ const routes: Routes = [
           import('./packages/ngx-ip/ngx-ip.module').then((m) => m.PackageNgxIPModule),
         canActivate: []
       },
+      {
+        path: 'ngx-device',
+        loadChildren: () =>
+          import('./packages/ngx-device/ngx-device.module').then((m) => m.PackageNgxDeviceModule),
+        canActivate: []
+      },
     ]
   },
 ];

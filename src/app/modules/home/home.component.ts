@@ -28,6 +28,10 @@ export class HomeComponent implements OnInit {
             url: 'packages/ngx-copy'
         },
         {
+            name: 'ngx-device',
+            url: 'packages/ngx-device'
+        },
+        {
             name: 'ngx-scroll-to-top',
             url: 'packages/ngx-scroll-to-top'
         },

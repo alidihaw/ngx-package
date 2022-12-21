@@ -1,0 +1,161 @@
+<div class="p-layout mt-10 text-center">
+  <div style="height: 35px"></div>
+  <div class="pt-10 pb-10">
+    <div class="flex items-center justify-center">
+      <img src="assets/angular.png" alt="Angular" style="width: 100px">
+    </div>
+      <div class="text-2xl md:text-4xl">
+        ngx-device
+      </div>
+      <div class="text-2xl mt-2">
+        {{ appData.version }} - <a href="https://github.com/alidihaw/ngodings/tree/master/packages/ngx-device" target="_blank">Installation</a>
+      </div>
+    </div>
+    <div style="height: 35px"></div>
+
+    <div class="content">
+
+      <div class="flex items-start justify-center gap-6 mb-6">
+        <div class="w-1/2">
+          <div class="font-bold mb-4 text-center">Iphone X</div>
+          <div class="code mb-6">
+            <div class="flex justify-end">
+              <i class="material-icons pointer" (click)="copyExSample1.copy()">content_copy</i>
+            </div>
+            <pre ngxCopy #copyExSample1="copy"><code>{{ sample1 }}</code></pre>
+          </div>
+          <div>
+            <ngx-device [device]="'iphone-x'">
+                <div class="text-center mt-10 pt-10">
+                  Your Content
+                </div>
+            </ngx-device>
+          </div>
+        </div>
+        <div class="w-1/2">
+          <div class="font-bold mb-4 text-center">Note 8</div>
+          <div class="code mb-6">
+            <div class="flex justify-end">
+              <i class="material-icons pointer" (click)="copyExSample2.copy()">content_copy</i>
+            </div>
+            <pre ngxCopy #copyExSample2="copy"><code>{{ sample2 }}</code></pre>
+          </div>
+          <div>
+            <ngx-device [device]="'note8'">
+                <div class="text-center mt-10 pt-10">
+                  Your Content
+                </div>
+            </ngx-device>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-start justify-center gap-6 mb-6">
+        <div class="w-1/2">
+          <div class="font-bold mb-4 text-center">Iphone 8</div>
+          <div class="code mb-6">
+            <div class="flex justify-end">
+              <i class="material-icons pointer" (click)="copyExSample3.copy()">content_copy</i>
+            </div>
+            <pre ngxCopy #copyExSample3="copy"><code>{{ sample3 }}</code></pre>
+          </div>
+          <div>
+            <ngx-device [device]="'iphone8'">
+                <div class="text-center mt-10 pt-10">
+                  Your Content
+                </div>
+            </ngx-device>
+          </div>
+        </div>
+        <div class="w-1/2">
+          <div class="font-bold mb-4 text-center">Iphone 8 Plus</div>
+          <div class="code mb-6">
+            <div class="flex justify-end">
+              <i class="material-icons pointer" (click)="copyExSample4.copy()">content_copy</i>
+            </div>
+            <pre ngxCopy #copyExSample4="copy"><code>{{ sample4 }}</code></pre>
+          </div>
+          <div>
+            <ngx-device [device]="'iphone8plus'">
+                <div class="text-center mt-10 pt-10">
+                  Your Content
+                </div>
+            </ngx-device>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-start justify-center gap-6 mb-6">
+        <div class="w-1/2">
+          <div class="font-bold mb-4 text-center">Iphone 5s</div>
+          <div class="code mb-6">
+            <div class="flex justify-end">
+              <i class="material-icons pointer" (click)="copyExSample5.copy()">content_copy</i>
+            </div>
+            <pre ngxCopy #copyExSample5="copy"><code>{{ sample5 }}</code></pre>
+          </div>
+          <div>
+            <ngx-device [device]="'iphone5s'">
+                <div class="text-center mt-10 pt-10">
+                  Your Content
+                </div>
+            </ngx-device>
+          </div>
+        </div>
+        <div class="w-1/2">
+          <div class="font-bold mb-4 text-center">Nexus 5</div>
+          <div class="code mb-6">
+            <div class="flex justify-end">
+              <i class="material-icons pointer" (click)="copyExSample7.copy()">content_copy</i>
+            </div>
+            <pre ngxCopy #copyExSample7="copy"><code>{{ sample7 }}</code></pre>
+          </div>
+          <div>
+            <ngx-device [device]="'nexus5'">
+                <div class="text-center mt-10 pt-10">
+                  Your Content
+                </div>
+            </ngx-device>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-start justify-center gap-6 mb-6">
+        <div class="w-full">
+          <div class="font-bold mb-4 text-center">Ipad</div>
+          <div class="code mb-6">
+            <div class="flex justify-end">
+              <i class="material-icons pointer" (click)="copyExSample6.copy()">content_copy</i>
+            </div>
+            <pre ngxCopy #copyExSample6="copy"><code>{{ sample6 }}</code></pre>
+          </div>
+          <div>
+            <ngx-device [device]="'ipad'">
+                <div class="text-center mt-10 pt-10">
+                  Your Content
+                </div>
+            </ngx-device>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex items-start justify-center gap-6 mb-6">
+      <div class="w-full">
+        <div class="font-bold mb-4 text-center">Macbook</div>
+        <div class="code mb-6">
+          <div class="flex justify-end">
+            <i class="material-icons pointer" (click)="copyExSample9.copy()">content_copy</i>
+          </div>
+          <pre ngxCopy #copyExSample9="copy"><code>{{ sample9 }}</code></pre>
+        </div>
+        <div>
+          <ngx-device [device]="'macbook'">
+              <div class="text-center mt-10 pt-10">
+                Your Content
+              </div>
+          </ngx-device>
+        </div>
+      </div>
+    </div>
+</div>

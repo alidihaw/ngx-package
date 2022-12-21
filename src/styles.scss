@@ -30,7 +30,8 @@ body {
   border-radius: 10px;
   pre {
       text-align: left;
-      overflow: auto;
+      overflow-x: none;
+      overflow-y: auto;
   }
 }
 

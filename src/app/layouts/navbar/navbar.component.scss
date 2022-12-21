@@ -78,6 +78,7 @@ app-navbar {
     }
 
     .navbar-scroll {
+        background-color: white !important;
         box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
         border-bottom: 1px solid #f5f5f5;
         animation: .5s ease-in-out 0s normal none 1 running fadeInDown;
@@ -85,6 +86,7 @@ app-navbar {
     }
 
     .navbar-inverse {
+        background-color: white !important;
         position: fixed;
         color: black;
         box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);

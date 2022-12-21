@@ -39,7 +39,7 @@ export class AppModule {}
 ### Usage 
 
 <p align="center">
-  <img width="600" src="https://raw.githubusercontent.com/alidihaw/ngodings/master/packages/ngx-whatsapp/public/sample1.png">
+  <img width="800" src="https://raw.githubusercontent.com/alidihaw/ngodings/master/packages/ngx-whatsapp/public/sample1.png">
 </p>
 
 Whatsapp Floating Button

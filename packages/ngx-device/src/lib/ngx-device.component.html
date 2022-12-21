@@ -1,0 +1,147 @@
+<ng-container *ngIf="device === 'iphone-x'">
+    <div class="marvel-device iphone-x">
+        <div class="notch">
+            <div class="camera"></div>
+            <div class="speaker"></div>
+        </div>
+        <div class="top-bar"></div>
+        <div class="sleep"></div>
+        <div class="bottom-bar"></div>
+        <div class="volume"></div>
+        <div class="overflow">
+            <div class="shadow shadow--tr"></div>
+            <div class="shadow shadow--tl"></div>
+            <div class="shadow shadow--br"></div>
+            <div class="shadow shadow--bl"></div>
+        </div>
+        <div class="inner-shadow"></div>
+        <div class="screen">
+            <div style="position: relative">
+                <ng-container *ngTemplateOutlet="content"></ng-container>
+            </div>
+        </div>
+    </div>
+</ng-container>
+
+<ng-container *ngIf="device === 'note8'">
+   <div class="marvel-device note8">
+        <div class="inner"></div>
+        <div class="overflow">
+            <div class="shadow"></div>
+        </div>
+        <div class="speaker"></div>
+        <div class="sensors"></div>
+        <div class="more-sensors"></div>
+        <div class="sleep"></div>
+        <div class="volume"></div>
+        <div class="camera"></div>
+        <div class="screen">
+            <div style="position: relative">
+                <ng-container *ngTemplateOutlet="content"></ng-container>
+            </div>
+        </div>
+    </div>
+</ng-container>
+
+<ng-container *ngIf="device === 'iphone8'">
+    <div class="marvel-device iphone8 silver">
+        <div class="top-bar"></div>
+        <div class="sleep"></div>
+        <div class="volume"></div>
+        <div class="camera"></div>
+        <div class="sensor"></div>
+        <div class="speaker"></div>
+        <div class="screen">
+            <div style="position: relative">
+                <ng-container *ngTemplateOutlet="content"></ng-container>
+            </div>
+        </div>
+        <div class="home"></div>
+        <div class="bottom-bar"></div>
+    </div>
+</ng-container>
+
+<ng-container *ngIf="device === 'iphone8plus'">
+    <div class="marvel-device iphone8plus black">
+        <div class="top-bar"></div>
+        <div class="sleep"></div>
+        <div class="volume"></div>
+        <div class="camera"></div>
+        <div class="sensor"></div>
+        <div class="speaker"></div>
+        <div class="screen">
+            <div style="position: relative">
+                <ng-container *ngTemplateOutlet="content"></ng-container>
+            </div>
+        </div>
+        <div class="home"></div>
+        <div class="bottom-bar"></div>
+    </div>
+</ng-container>
+
+<ng-container *ngIf="device === 'iphone5s'">
+    <div class="marvel-device iphone5s">
+        <div class="top-bar"></div>
+        <div class="sleep"></div>
+        <div class="volume"></div>
+        <div class="camera"></div>
+        <div class="sensor"></div>
+        <div class="speaker"></div>
+        <div class="screen">
+            <div style="position: relative">
+                <ng-container *ngTemplateOutlet="content"></ng-container>
+            </div>
+        </div>
+        <div class="home"></div>
+        <div class="bottom-bar"></div>
+    </div>
+</ng-container>
+
+<ng-container *ngIf="device === 'ipad'">
+    <div class="marvel-device ipad">
+        <div class="top-bar"></div>
+        <div class="sleep"></div>
+        <div class="volume"></div>
+        <div class="camera"></div>
+        <div class="sensor"></div>
+        <div class="speaker"></div>
+        <div class="screen">
+            <div style="position: relative">
+                <ng-container *ngTemplateOutlet="content"></ng-container>
+            </div>
+        </div>
+        <div class="home"></div>
+        <div class="bottom-bar"></div>
+    </div>
+</ng-container>
+
+<ng-container *ngIf="device === 'nexus5'">
+    <div class="marvel-device nexus5">
+        <div class="top-bar"></div>
+        <div class="sleep"></div>
+        <div class="volume"></div>
+        <div class="camera"></div>
+        <div class="screen">
+            <div style="position: relative">
+                <ng-container *ngTemplateOutlet="content"></ng-container>
+            </div>
+        </div>
+    </div>
+</ng-container>
+
+<ng-container *ngIf="device === 'macbook'">
+    <div class="marvel-device macbook">
+        <div class="top-bar"></div>
+        <div class="camera"></div>
+        <div class="screen">
+            <div style="position: relative">
+                <ng-container *ngTemplateOutlet="content"></ng-container>
+            </div>
+        </div>
+        <div class="bottom-bar"></div>
+    </div>
+</ng-container>
+
+<ng-template #content>
+    <ng-content></ng-content>
+</ng-template>
