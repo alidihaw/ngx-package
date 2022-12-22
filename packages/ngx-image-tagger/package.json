@@ -1,10 +1,11 @@
 {
   "name": "@ngodings/ngx-image-tagger",
-  "version": "15.0.7",
+  "description": "Simple Image Tagger like instagram, easy to put stuff/item information in x/y position from image, easy configuration in Angular",
+  "version": "15.0.8",
   "peerDependencies": {
     "@angular/common": "^15.0.0",
     "@angular/core": "^15.0.0",
-    "@ngodings/ngx-currency": "^15.0.0",
+    "@ngodings/ngx-currency": "^15.0.8",
     "material-icons": "^1.13.1"
   },
   "license": "MIT",

@@ -1,6 +1,7 @@
 {
   "name": "@ngodings/ngx-whatsapp",
-  "version": "15.0.7",
+  "description": "Simple floating button to send whatsapp for your business/sales in Angular",
+  "version": "15.0.8",
   "peerDependencies": {
     "@angular/common": "^15.0.0",
     "@angular/core": "^15.0.0"

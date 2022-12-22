@@ -1,6 +1,7 @@
 {
   "name": "@ngodings/ngx-rupiah",
-  "version": "15.0.7",
+  "description": "Angular directive mask for currency Rupiah/IDR support for NgModule or Reactive forms, pipe for currency Rupiah/IDR & pipe for terbilang in Rupiah/IDR",
+  "version": "15.0.8",
   "peerDependencies": {
     "@angular/common": "^15.0.0",
     "@angular/core": "^15.0.0"

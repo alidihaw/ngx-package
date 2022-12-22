@@ -1,6 +1,7 @@
 {
   "name": "@ngodings/ngx-copy",
-  "version": "15.0.7",
+  "description": "Simple copy from text, value input & text inside element in Angular",
+  "version": "15.0.8",
   "peerDependencies": {
     "@angular/common": "^15.0.0",
     "@angular/core": "^15.0.0"

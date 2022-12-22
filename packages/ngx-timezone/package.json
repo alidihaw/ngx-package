@@ -1,6 +1,7 @@
 {
   "name": "@ngodings/ngx-timezone",
-  "version": "15.0.7",
+  "description": "Easy for get All Timezone, detect your timezone, convert timezone to country & get all timezone by country in Angular",
+  "version": "15.0.8",
   "peerDependencies": {
     "@angular/common": "^15.0.0",
     "@angular/core": "^15.0.0"
