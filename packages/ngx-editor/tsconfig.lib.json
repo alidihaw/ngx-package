@@ -7,7 +7,7 @@
     "declarationMap": true,
     "inlineSources": true,
     "types": [
-      "src/lib/ngx-editor.d"
+      "./types.d.ts"
     ]
   },
   "exclude": [

@@ -1,0 +1,36 @@
+{
+  "name": "@types/ngodings__ckeditor5",
+  "description": "Angular package for Editor, easy to use (Support Mention & Tagging)",
+  "version": "15.0.8",
+  "peerDependencies": {
+  },
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "typescript": "^2.7.2"
+  },
+  "homepage": "https://npm.ngodings.com/packages/ngx-editor",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alidihaw/ngodings/tree/master/packages/ngx-editor"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "angular",
+    "angular2",
+    "angular4",
+    "angular9",
+    "angular15",
+    "editor",
+    "ckeditor",
+    "ckeditor5",
+    "mention",
+    "textarea",
+    "tag"
+  ]
+}
