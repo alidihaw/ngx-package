@@ -25,7 +25,7 @@ Install the package by command:
 Import the module
 
 ```ts
-import { NgxRupiahModule} from "@ngodings/ngx-rupiah";
+import { NgxRupiahModule } from "@ngodings/ngx-rupiah";
 
 @NgModule({
     imports: [

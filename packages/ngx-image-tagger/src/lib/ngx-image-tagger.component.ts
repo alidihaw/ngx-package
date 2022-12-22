@@ -50,7 +50,7 @@ export class NgxImageTaggerComponent implements OnInit {
     x: 0,
     y: 0,
     url: '',
-    tags: [ ]
+    tags: []
   }
   @Output() taggerChange: EventEmitter<TaggerModel> = new EventEmitter<TaggerModel>();
 
@@ -60,7 +60,6 @@ export class NgxImageTaggerComponent implements OnInit {
 
   constructor() {
     fromEvent(document.body, 'mousedown').subscribe((event: any) => {
-      console.log("event", event);
       const elementId = (event.target as Element).id;
       if (this.tagger && elementId === this.tagger.id) {
         this.resetTag();

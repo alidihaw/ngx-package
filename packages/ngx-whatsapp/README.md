@@ -25,12 +25,12 @@ Install the package by command:
 Import the module
 
 ```ts
-import { NgxWhatsapp } from "@ngodings/ngx-whatsapp";
+import { NgxWhatsappModule } from "@ngodings/ngx-whatsapp";
 
 @NgModule({
     imports: [
         ...
-        NgxWhatsapp
+        NgxWhatsappModule
     ],
     declarations: [...],
     providers: [...]

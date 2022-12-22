@@ -20,6 +20,10 @@ export class HomeComponent implements OnInit {
             url: 'packages/ngx-timezone'
         },
         {
+            name: 'ngx-editor',
+            url: 'packages/ngx-editor'
+        },
+        {
             name: 'ngx-whatsapp',
             url: 'packages/ngx-whatsapp'
         },

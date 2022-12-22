@@ -49,16 +49,9 @@ export class NavbarComponent implements OnInit {
   onChangeLayout(url: string) {
     let element = document.querySelector('.navbar') as HTMLElement;
     if (element) {
-      // if (url == '/' || url == '' || url == '/about' || url == '/contact') {
-      //   console.log("subscribe url", url);
-      //   this.isHome = true;
-      //   this.isScroll = false;
-      //   element.classList.remove('navbar-inverse');
-      // } else {
       this.isHome = false;
       this.isScroll = true;
       element.classList.add('navbar-inverse');
-      // }
     }
   }
 }

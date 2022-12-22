@@ -23,9 +23,7 @@ export class AppHelper {
     }
 
     scrollToElement(id: string): void {
-        console.log("scrollToElement", id);
         let element = document.getElementById(id);
-        console.log("scrollToElement", element);
         element?.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
     }
 

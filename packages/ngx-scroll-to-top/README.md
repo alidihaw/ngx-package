@@ -25,12 +25,12 @@ Install the package by command:
 Import the module
 
 ```ts
-import { NgxScrollToTop } from "@ngodings/ngx-scroll-to-top";
+import { NgxScrollToTopModule } from "@ngodings/ngx-scroll-to-top";
 
 @NgModule({
     imports: [
         ...
-        NgxScrollToTop
+        NgxScrollToTopModule
     ],
     declarations: [...],
     providers: [...]

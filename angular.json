@@ -24,6 +24,9 @@
             "polyfills": [
               "zone.js"
             ],
+            "allowedCommonJsDependencies": [
+              "@ngodings/ckeditor5"
+            ],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -90,6 +93,29 @@
           "options": {
             "browserTarget": "packages:build"
           }
+        }
+      }
+    },
+    "ckeditor5-angular": {
+      "projectType": "library",
+      "root": "packages/ckeditor5-angular",
+      "sourceRoot": "packages/ckeditor5-angular/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "packages/ckeditor5-angular/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "packages/ckeditor5-angular/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "packages/ckeditor5-angular/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     },
@@ -317,6 +343,29 @@
             },
             "development": {
               "tsConfig": "packages/ngx-device/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        }
+      }
+    },
+    "ngx-editor": {
+      "projectType": "library",
+      "root": "packages/ngx-editor",
+      "sourceRoot": "packages/ngx-editor/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "packages/ngx-editor/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "packages/ngx-editor/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "packages/ngx-editor/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"

@@ -1,0 +1,62 @@
+ngx-editor {
+  font-family: inherit;
+}
+
+.ck.ck-editor {
+  border-radius: 10px !important;
+}
+
+.ck-content {
+  height: 200px;
+}
+
+.custom-item {
+  width: 100%;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.custom-item-username {}
+
+.custom-item-user {
+  width: 100%;
+  font-weight: 600;
+  display: flex;
+}
+
+.custom-item-name {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.custom-item-user.ck-button.ck-on {
+
+  .custom-item-name {
+    color: white;
+  }
+
+  .custom-item-username {
+    color: white;}
+}
+
+.custom-item-img-container {
+  margin-right: 8px !important;
+  align-self: center;
+
+  .custom-item-img,
+  img {
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 100% !important;
+  }
+}
+
+.custom-item.ck-button.ck-on {
+  background-color: white;
+
+  .custom-item-name {}
+
+  .custom-item-username {}
+}

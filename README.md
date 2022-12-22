@@ -13,6 +13,7 @@ Indonesia People: [https://sociabuzz.com/dihaw](https://sociabuzz.com/dihaw)
 ## List Packages
 
 - [ngx-timezone](https://npm.ngodings.com/packages/ngx-timezone)
+- [ngx-editor](https://npm.ngodings.com/packages/ngx-editor)
 - [ngx-whatsapp](https://npm.ngodings.com/packages/ngx-whatsapp)
 - [ngx-copy](https://npm.ngodings.com/packages/ngx-copy)
 - [ngx-device](https://npm.ngodings.com/packages/ngx-device)

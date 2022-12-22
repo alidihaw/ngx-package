@@ -72,6 +72,12 @@ const routes: Routes = [
           import('./packages/ngx-device/ngx-device.module').then((m) => m.PackageNgxDeviceModule),
         canActivate: []
       },
+      {
+        path: 'ngx-editor',
+        loadChildren: () =>
+          import('./packages/ngx-editor/ngx-editor.module').then((m) => m.PackageNgxEditorModule),
+        canActivate: []
+      },
     ]
   },
 ];

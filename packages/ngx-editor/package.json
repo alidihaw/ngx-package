@@ -1,0 +1,33 @@
+{
+  "name": "@ngodings/ngx-editor",
+  "description": "Angular package for Editor, easy to use (Support Mention & Tagging)",
+  "version": "15.0.8",
+  "peerDependencies": {
+    "@angular/common": "^15.0.0",
+    "@angular/core": "^15.0.0",
+    "@ngodings/ckeditor5": "^1.0.0",
+    "@ngodings/ckeditor5-angular": "^15.0.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "homepage": "https://npm.ngodings.com/packages/ngx-editor",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alidihaw/ngodings/tree/master/packages/ngx-editor"
+  },
+  "keywords": [
+    "angular",
+    "angular2",
+    "angular4",
+    "angular9",
+    "angular15",
+    "editor",
+    "ckeditor",
+    "ckeditor5",
+    "mention",
+    "textarea",
+    "tag"
+  ]
+}

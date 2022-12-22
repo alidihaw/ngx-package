@@ -1,0 +1,37 @@
+{
+  "name": "@ngodings/ckeditor5-angular",
+  "version": "15.0.0",
+  "description": "Ckeditor5 Angular with Latest Version",
+  "keywords": [
+    "wysiwyg",
+    "rich text",
+    "editor",
+    "html",
+    "contentEditable",
+    "editing",
+    "angular",
+    "angular2",
+    "angular9",
+    "angular15",
+    "ng",
+    "component",
+    "ckeditor",
+    "ckeditor5",
+    "ckeditor 5"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^15.0.0",
+    "@angular/core": "^15.0.0",
+    "@angular/forms": "^15.0.0",
+    "@ckeditor/ckeditor5-watchdog": "^34.2.0",
+    "rxjs": "~7.6.0"
+  },
+  "devDependencies": {
+  },
+  "license": "MIT",
+  "homepage": "https://npm.ngodings.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alidihaw/ngodings/tree/master/packages/ckeditor5-angular"
+  }
+}
