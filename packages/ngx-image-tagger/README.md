@@ -1,5 +1,7 @@
 # @ngodings/ngx-image-tagger
 
+Simple Image Tagger like instagram, easy to put stuff/item information in x/y position from image, easy configuration in Angular
+
 ## Demo - Angular v15
 
 [https://npm.ngodings.com/packages/ngx-image-tagger](https://npm.ngodings.com/packages/ngx-image-tagger)

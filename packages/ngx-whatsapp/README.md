@@ -1,5 +1,7 @@
 # @ngodings/ngx-whatsapp
 
+Simple floating button to send whatsapp for your business/sales in Angular
+
 ## Demo - Angular v15
 
 [https://npm.ngodings.com/packages/ngx-whatsapp](https://npm.ngodings.com/packages/ngx-whatsapp)

@@ -1,5 +1,7 @@
 # @ngodings/ngx-copy
 
+Simple copy from text, value input & text inside element in Angular
+
 ## Demo - Angular v15
 
 [https://npm.ngodings.com/packages/ngx-copy](https://npm.ngodings.com/packages/ngx-copy)

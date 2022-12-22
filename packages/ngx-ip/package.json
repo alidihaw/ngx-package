@@ -1,6 +1,6 @@
 {
   "name": "@ngodings/ngx-ip",
-  "version": "15.0.2",
+  "version": "15.0.7",
   "peerDependencies": {
     "@angular/common": "^15.0.0",
     "@angular/core": "^15.0.0"

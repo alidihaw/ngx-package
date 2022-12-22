@@ -1,5 +1,7 @@
 # @ngodings/ngx-currency
 
+Angular directive mask for currency, support for NgModule or Reactive forms & easy to use 
+
 ## Demo - Angular v15
 
 [https://npm.ngodings.com/packages/ngx-currency](https://npm.ngodings.com/packages/ngx-currency)

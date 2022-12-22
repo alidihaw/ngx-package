@@ -1,5 +1,7 @@
 # @ngodings/ngx-device
 
+Angular mockup device for Iphone, Android, Ipad and Macbook with customize content
+
 ## Demo - Angular v15
 
 [https://npm.ngodings.com/packages/ngx-device](https://npm.ngodings.com/packages/ngx-device)

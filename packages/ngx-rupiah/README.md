@@ -1,5 +1,7 @@
 # @ngodings/ngx-rupiah
 
+Angular directive mask for currency Rupiah/IDR support for NgModule or Reactive forms, pipe for currency Rupiah/IDR & pipe for terbilang in Rupiah/IDR
+
 ## Demo - Angular v15
 
 [https://npm.ngodings.com/packages/ngx-rupiah](https://npm.ngodings.com/packages/ngx-rupiah)
@@ -23,7 +25,7 @@ Install the package by command:
 Import the module
 
 ```ts
-import { NgxRupiahModule } from "@ngodings/ngx-rupiah";
+import { NgxRupiahModule} from "@ngodings/ngx-rupiah";
 
 @NgModule({
     imports: [

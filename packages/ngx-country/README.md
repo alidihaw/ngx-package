@@ -1,5 +1,7 @@
 # @ngodings/ngx-country
 
+Simple get all country, get country by code/abbreviation, get code by country, get bbreviation by country & easy use pipe in Angular
+
 ## Demo - Angular v15
 
 [https://npm.ngodings.com/packages/ngx-country](https://npm.ngodings.com/packages/ngx-country)

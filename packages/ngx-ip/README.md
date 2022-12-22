@@ -1,5 +1,7 @@
 # @ngodings/ngx-ip
 
+Simple get your ip in Angular
+
 ## Demo - Angular v15
 
 [https://npm.ngodings.com/packages/ngx-ip](https://npm.ngodings.com/packages/ngx-ip)

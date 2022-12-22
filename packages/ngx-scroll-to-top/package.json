@@ -1,6 +1,6 @@
 {
   "name": "@ngodings/ngx-scroll-to-top",
-  "version": "15.0.1",
+  "version": "15.0.7",
   "peerDependencies": {
     "@angular/common": "^15.0.0",
     "@angular/core": "^15.0.0",

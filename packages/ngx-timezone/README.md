@@ -1,5 +1,7 @@
 # @ngodings/ngx-timezone
 
+Easy for get All Timezone, detect your timezone, convert timezone to country & get all timezone by country in Angular
+
 ## Demo - Angular v15
 
 [https://npm.ngodings.com/packages/ngx-timezone](https://npm.ngodings.com/packages/ngx-timezone)

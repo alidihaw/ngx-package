@@ -1,5 +1,7 @@
 # @ngodings/ngx-scroll-to-top
 
+Simple floating button for scroll to top in Angular
+
 ## Demo - Angular v15
 
 [https://npm.ngodings.com/packages/ngx-scroll-to-top](https://npm.ngodings.com/packages/ngx-scroll-to-top)
