@@ -2,7 +2,14 @@
 {
   "extends": "./tsconfig.lib.json",
   "compilerOptions": {
-    "declarationMap": false
+    "declarationMap": false,
+    "declaration": true,
+    "allowJs": true,
+    "checkJs": false,
+    "typeRoots": [ "./src/lib/", "./node_modules/@types"],
+    "types": [
+      "./src/typings",
+    ]
   },
   "angularCompilerOptions": {
     "compilationMode": "partial"

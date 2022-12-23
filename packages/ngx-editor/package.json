@@ -17,6 +17,7 @@
     "type": "git",
     "url": "https://github.com/alidihaw/ngodings/tree/master/packages/ngx-editor"
   },
+  "typings": "dist/src/typings.d.ts",
   "keywords": [
     "angular",
     "angular2",

@@ -1,6 +1,6 @@
 # @ngodings/ngx-editor
 
-Angular package for Editor, easy to use (Support Mention & Tagging)
+Angular package for Editor, easy to use (Support Mention & Tagging) from ckeditor5
 
 ## Demo - Angular v15
 

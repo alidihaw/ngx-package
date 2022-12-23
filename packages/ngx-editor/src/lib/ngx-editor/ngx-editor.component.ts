@@ -1,5 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output, ViewEncapsulation } from '@angular/core';
-import * as ClassicEditor from '@ngodings/ckeditor5';
+
+/// <reference path="../typings/typings.d.ts" />
+import * as ClassicEditorBuild from '@ngodings/ckeditor5';
 import { Mention, Tag } from '../model/editor';
 
 @Component({
@@ -9,7 +11,7 @@ import { Mention, Tag } from '../model/editor';
   encapsulation: ViewEncapsulation.None,
 })
 export class NgxEditorComponent implements OnInit {
-  public Editor = ClassicEditor;
+  public Editor = ClassicEditorBuild;
 
   @Input() data = '';
   @Input() placeholder = '';

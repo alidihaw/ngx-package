@@ -5,9 +5,12 @@
     "outDir": "../../out-tsc/lib",
     "declaration": true,
     "declarationMap": true,
+    "allowJs": true,
     "inlineSources": true,
+    "checkJs": false,
+    "typeRoots": [ "./src/lib", "./node_modules/@types"],
     "types": [
-      "./types.d.ts"
+      "./src/typings"
     ]
   },
   "exclude": [

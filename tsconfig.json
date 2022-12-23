@@ -8,6 +8,7 @@
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
+    "typeRoots": [ "./src/lib/types", "./src/types", "./node_modules/@types"],
     "paths": {
       "@angular/*": [
          "./node_modules/@angular/*"
@@ -38,7 +39,7 @@
     "lib": [
       "ES2022",
       "dom"
-    ],
+    ]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
