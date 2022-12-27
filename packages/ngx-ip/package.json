@@ -1,7 +1,7 @@
 {
   "name": "@ngodings/ngx-ip",
   "description": "Simple get your ip in Angular",
-  "version": "15.0.8",
+  "version": "15.0.9",
   "peerDependencies": {
     "@angular/common": "^15.0.0",
     "@angular/core": "^15.0.0"
@@ -16,6 +16,7 @@
     "url": "https://github.com/alidihaw/ngodings/tree/master/packages/ngx-ip"
   },
   "keywords": [
+    "ngx",
     "angular",
     "angular2",
     "angular4",
@@ -23,6 +24,8 @@
     "angular15",
     "ip",
     "ipv4",
-    "ngx"
+    "ngx",
+    "@ngodings",
+    "ngodings"
   ]
 }

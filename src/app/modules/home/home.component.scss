@@ -13,4 +13,41 @@ ngodings-home {
         color: #2196f3;
         transition: all 0.4s ease;
     }
+    input {
+        outline: none;
+    }
+    
+    input[type=search] {
+        -webkit-appearance: textfield;
+        -webkit-box-sizing: content-box;
+        font-family: inherit;
+        font-size: 100%;
+    }
+    input::-webkit-search-decoration,
+    input::-webkit-search-cancel-button {
+        display: none; 
+    }
+    input[type=search] {
+        padding: 12px 32px 12px 42px;
+        width: 150px;
+        background: #fff url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+        border: solid 1px #ccc;
+        
+        -webkit-border-radius: 10em;
+           -moz-border-radius: 10em;
+                border-radius: 10em;
+        
+        -webkit-transition: all .5s;
+           -moz-transition: all .5s;
+                transition: all .5s;
+    }
+    input[type=search]:focus {
+        width: 240px;
+        background-color: #fff;
+        border-color: #ffa200;
+        
+        -webkit-box-shadow: 0 0 5px #ffa200;
+           -moz-box-shadow: 0 0 5px #ffa200;
+                box-shadow: 0 0 5px #ffa200;
+    }
 }

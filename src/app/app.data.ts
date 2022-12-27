@@ -54,7 +54,7 @@ export class AppData {
         }
     }
 
-    private versionValue = 'v15.0';
+    private versionValue = 'Angular v15.0';
     get version(): string {
         return this.versionValue;
     }

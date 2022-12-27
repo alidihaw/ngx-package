@@ -1,0 +1,22 @@
+
+ngodings-ngx-pipes {
+    .input-sample {
+        width: 300px;
+    }
+
+    .value {
+        width: 100%;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        padding: 20px;
+        pre {
+            text-align: left;
+        }
+    }
+
+    .divider {
+        height: 1px;
+        width: 100%;
+        background-color: #f5f5f5;
+    }
+}

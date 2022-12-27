@@ -14,6 +14,8 @@ export class HomeComponent implements OnInit {
     color = ColorStandard;
     size = SizeStandard;
 
+    search = '';
+
     packages: { name: string, url: string, type: string }[] = [
         {
             name: 'ngx-timezone',
@@ -74,6 +76,11 @@ export class HomeComponent implements OnInit {
             name: 'ngx-interceptor',
             url: 'https://www.npmjs.com/package/@ngodings/ngx-interceptor',
             type: 'link',
+        },
+        {
+            name: 'ngx-pipes',
+            url: 'packages/ngx-pipes',
+            type: 'url',
         },
     ]
     constructor(public appHelper: AppHelper, public appData: AppData,) {

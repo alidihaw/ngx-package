@@ -15,46 +15,52 @@
   <div style="height: 35px"></div>
 
   <div class="content">
-    <div class="font-bold mb-4 text-center">Editor (Support Tagging # & Mention @)</div>
-    <div class="mb-6">
-      <ngx-editor [(data)]="text" [tags]="tags" [mentions]="mentions"></ngx-editor>
-    </div>
-    <div class="flex gap-6 mb-6">
-      <div class="w-1/2">
-        <div class="flex flex-col items-start justify-start">
-          <div class="fond-bold mb-4">
-            Result:
+    <section>
+      <div class="font-bold mb-4 text-center">Editor (Support Tagging # & Mention @)</div>
+      <div class="mb-6">
+        <ngx-editor [(data)]="text" [tags]="tags" [mentions]="mentions"></ngx-editor>
+      </div>
+      <div class="flex gap-6 mb-6">
+        <div class="w-1/2">
+          <div class="flex flex-col items-start justify-start">
+            <div class="fond-bold mb-4">
+              Result:
+            </div>
+            <div class="code">
+              <ngx-view-editor [data]="text"></ngx-view-editor>
+            </div>
           </div>
+        </div>
+        <div class="w-1/2">
+          <div class="flex flex-col items-start justify-start">
+            <div class="fond-bold mb-4">
+              Value:
+            </div>
+            <div class="code">
+              {{ text }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex">
           <div class="code">
-            <ngx-view-editor [data]="text"></ngx-view-editor>
+            <div class="flex justify-end">
+              <i class="material-icons pointer" (click)="copyExSample1.copy()">content_copy</i>
+            </div>
+            <pre ngxCopy #copyExSample1="copy"><code>{{ sample1 }}</code></pre>
           </div>
         </div>
       </div>
-      <div class="w-1/2">
-        <div class="flex flex-col items-start justify-start">
-          <div class="fond-bold mb-4">
-            Value:
-          </div>
-          <div class="code">
-            {{ text }}
-          </div>
-        </div>
+    </section>
+
+    <section>
+      <div class="font-bold mb-4 text-center mt-6">Editor Simple</div>
+      <div class="mb-6">
+        <ngx-editor [(data)]="text" [isSimple]="true" [placeholder]="'Simple Editor'" [tags]="tags"
+          [mentions]="mentions">
+        </ngx-editor>
       </div>
-    </div>
-    <div>
-      <div class="flex">
-        <div class="code">
-          <div class="flex justify-end">
-            <i class="material-icons pointer" (click)="copyExSample1.copy()">content_copy</i>
-          </div>
-          <pre ngxCopy #copyExSample1="copy"><code>{{ sample1 }}</code></pre>
-        </div>
-      </div>
-    </div>
-    
-    <div class="font-bold mb-4 text-center mt-6">Editor Simple</div>
-    <div class="mb-6">
-      <ngx-editor [(data)]="text" [isSimple]="true" [placeholder]="'Simple Editor'" [tags]="tags" [mentions]="mentions"></ngx-editor>
-    </div>
+    </section>
   </div>
 </div>

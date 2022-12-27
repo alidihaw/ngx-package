@@ -1,7 +1,7 @@
 {
   "name": "@ngodings/ngx-interceptor",
   "description": "Angular HTTP Interceptor for Error Handling & Header Authorization",
-  "version": "15.0.0",
+  "version": "15.0.9",
   "peerDependencies": {
     "@angular/common": "^15.0.0",
     "@angular/core": "^15.0.0"
@@ -21,11 +21,13 @@
     "angular4",
     "angular9",
     "angular15",
-    "currency",
-    "mask",
-    "model",
-    "money",
-    "ngx",
-    "number"
+    "interceptor",
+    "http",
+    "errorhandler",
+    "error",
+    "handler",
+    "header",
+    "@ngodings",
+    "ngodings"
   ]
 }

@@ -1,7 +1,7 @@
 {
   "name": "@ngodings/ngx-editor",
   "description": "Angular package for Editor, easy to use (Support Mention & Tagging)",
-  "version": "15.0.8",
+  "version": "15.0.9",
   "peerDependencies": {
     "@angular/common": "^15.0.0",
     "@angular/core": "^15.0.0",
@@ -19,6 +19,7 @@
   },
   "typings": "dist/src/typings.d.ts",
   "keywords": [
+    "ngx",
     "angular",
     "angular2",
     "angular4",
@@ -29,6 +30,8 @@
     "ckeditor5",
     "mention",
     "textarea",
-    "tag"
+    "tag",
+    "@ngodings",
+    "ngodings"
   ]
 }

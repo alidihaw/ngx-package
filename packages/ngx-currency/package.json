@@ -1,7 +1,7 @@
 {
   "name": "@ngodings/ngx-currency",
   "description": "Angular directive mask for currency, support for NgModule or Reactive forms & easy to use ",
-  "version": "15.0.8",
+  "version": "15.0.9",
   "peerDependencies": {
     "@angular/common": "^15.0.0",
     "@angular/core": "^15.0.0"
@@ -16,6 +16,7 @@
     "url": "https://github.com/alidihaw/ngodings/tree/master/packages/ngx-currency"
   },
   "keywords": [
+    "ngx",
     "angular",
     "angular2",
     "angular4",
@@ -26,6 +27,8 @@
     "model",
     "money",
     "ngx",
-    "number"
+    "number",
+    "@ngodings",
+    "ngodings"
   ]
 }

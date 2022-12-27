@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
-import { PackageNgxCurrencyComponent } from './ngx-copy.component';
+import { PackageNgxCopyComponent } from './ngx-copy.component';
 import { FormsModule } from '@angular/forms';
 
 import { MatInputModule } from '@angular/material/input';
@@ -13,13 +13,13 @@ import { MatButtonModule } from '@angular/material/button';
 const routes: Routes = [
     {
         path: '',
-        component: PackageNgxCurrencyComponent
+        component: PackageNgxCopyComponent
     },
 ];
 
 @NgModule({
     declarations: [
-        PackageNgxCurrencyComponent
+        PackageNgxCopyComponent
     ],
     imports: [
         RouterModule.forChild(routes),
@@ -35,4 +35,4 @@ const routes: Routes = [
     schemas: [
     ],
 })
-export class PackageNgxCurrencyModule { }
+export class PackageNgxCopyModule { }

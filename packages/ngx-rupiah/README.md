@@ -9,7 +9,7 @@ Angular directive mask for currency Rupiah/IDR support for NgModule or Reactive 
 ## Support Me
 
 If you like this package I will be happy that you support me on Buy me a coffee :) <br />
-Buy me coffe: [https://www.buymeacoffee.com/alidihaw](https://www.buymeacoffee.com/alidihaw)<br />
+Buy me coffee: [https://www.buymeacoffee.com/alidihaw](https://www.buymeacoffee.com/alidihaw)<br />
 Indonesia People: [https://sociabuzz.com/dihaw](https://sociabuzz.com/dihaw)
 
 ## Getting Started

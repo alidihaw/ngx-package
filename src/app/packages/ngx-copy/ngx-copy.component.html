@@ -4,25 +4,28 @@
     <div class="flex items-center justify-center">
       <img src="assets/angular.png" alt="Angular" style="width: 100px">
     </div>
-      <div class="text-2xl md:text-4xl">
-        ngx-copy
-      </div>
-      <div class="text-2xl mt-2">
-        {{ appData.version }} - <a href="https://github.com/alidihaw/ngodings/tree/master/packages/ngx-copy" target="_blank">Installation</a>
-      </div>
+    <div class="text-2xl md:text-4xl">
+      ngx-copy
     </div>
-    <div style="height: 35px"></div>
+    <div class="text-2xl mt-2">
+      {{ appData.version }} - <a href="https://github.com/alidihaw/ngodings/tree/master/packages/ngx-copy"
+        target="_blank">Installation</a>
+    </div>
+  </div>
+  <div style="height: 35px"></div>
+
+  <div class="content">
 
     <div class="content">
-
-      <div class="content">
+      <section>
         <div class="font-bold mb-4 text-center">Copy Content from Text</div>
         <div class="flex items-start justify-center gap-6 mb-6">
           <div class="w-1/2">
             <div class="divider"></div>
             <div ngxCopy #copySample1="copy">
               <h4><b>Title</b></h4>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum augue at ante sollicitudin posuere. Pellentesque congue consequat enim quis luctus.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum augue at ante sollicitudin posuere.
+              Pellentesque congue consequat enim quis luctus.
             </div>
             <div class="divider"></div>
             <div class="mt-4">
@@ -38,13 +41,16 @@
             </div>
           </div>
         </div>
+      </section>
 
+      <section>
         <div class="font-bold mb-4 text-center">Copy Content from Simple Text</div>
         <div class="flex items-start justify-center gap-6 mb-6">
           <div class="w-1/2">
             <div class="divider"></div>
             <div ngxCopy #copySample2="copy">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum augue at ante sollicitudin posuere. Pellentesque congue consequat enim quis luctus.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum augue at ante sollicitudin posuere.
+              Pellentesque congue consequat enim quis luctus.
             </div>
             <div class="divider"></div>
             <div class="mt-4">
@@ -60,7 +66,9 @@
             </div>
           </div>
         </div>
+      </section>
 
+      <section>
         <div class="font-bold mb-4 text-center">Copy Content from Input</div>
         <div class="flex items-start justify-center gap-6 mb-6">
           <div class="w-1/2">
@@ -68,7 +76,7 @@
             <div>
               <mat-form-field class="input-sample">
                 <mat-label>Sample</mat-label>
-                <input matInput placeholder="Sample" [(ngModel)]="input" ngxCopy #copySample3="copy" >
+                <input matInput placeholder="Sample" [(ngModel)]="input" ngxCopy #copySample3="copy">
               </mat-form-field>
             </div>
             <div class="divider"></div>
@@ -85,5 +93,6 @@
             </div>
           </div>
         </div>
+      </section>
     </div>
-</div>
+  </div>

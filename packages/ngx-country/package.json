@@ -1,7 +1,7 @@
 {
   "name": "@ngodings/ngx-country",
   "description": "Simple get all country, get country by code/abbreviation, get code by country, get bbreviation by country & easy use pipe in Angular",
-  "version": "15.0.8",
+  "version": "15.0.9",
   "peerDependencies": {
     "@angular/common": "^15.0.0",
     "@angular/core": "^15.0.0"
@@ -16,6 +16,7 @@
     "url": "https://github.com/alidihaw/ngodings/tree/master/packages/ngx-country"
   },
   "keywords": [
+    "ngx",
     "angular",
     "angular2",
     "angular4",
@@ -25,6 +26,8 @@
     "countrycode",
     "countryname",
     "countries",
-    "ngx"
+    "ngx",
+    "@ngodings",
+    "ngodings"
   ]
 }

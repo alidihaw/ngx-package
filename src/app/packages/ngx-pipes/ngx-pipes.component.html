@@ -1,0 +1,398 @@
+<div class="p-layout mt-10 text-center">
+  <div style="height: 35px"></div>
+  <div class="pt-10 pb-10">
+    <div class="flex items-center justify-center">
+      <img src="assets/angular.png" alt="Angular" style="width: 100px">
+    </div>
+      <div class="text-2xl md:text-4xl">
+        ngx-pipes
+      </div>
+      <div class="text-2xl mt-2">
+        {{ appData.version }} - <a href="https://github.com/alidihaw/ngodings/tree/master/packages/ngx-pipes" target="_blank">Installation</a>
+      </div>
+    </div>
+    <div style="height: 35px"></div>
+
+    <div class="content">
+
+      <div class="content">
+        <section>
+          <div class="font-bold mb-2 text-center">String - timeAgo</div>
+          <div class="mb-4 text-center">Time ago pipe converts date to 'just now', 'X days ago', 'last week', 'X days ago', etc..</div>
+          <div class="flex items-start justify-start gap-6 mb-6">
+            <div class="w-1/2">
+              <div class="divider"></div>
+              <div class="flex flex-col items-start ">
+                <div>Updated: {{now | timeAgo}}</div>
+                <div>Updated: {{lastWeek | timeAgo}}</div>
+              </div>
+              <div class="divider"></div>
+            </div>
+            <div class="w-1/2">
+              <div class="code mt-2">
+                <div class="flex justify-end">
+                  <i class="material-icons pointer" (click)="copyExSample1.copy()">content_copy</i>
+                </div>
+                <pre ngxCopy #copyExSample1="copy"><code>{{ sample1 }}</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="font-bold mb-4 text-center">String - aOrAn</div>
+          <div class="mb-4 text-center">Prefixes input string with "a" or "an".</div>
+          <div class="flex items-start justify-start gap-6 mb-6">
+            <div class="w-1/2">
+              <div class="divider"></div>
+              <div class="flex flex-col items-start ">
+                <div>This is a picture of {{ 'mountain' | aOrAn}}</div>
+              </div>
+              <div class="divider"></div>
+            </div>
+            <div class="w-1/2">
+              <div class="code mt-2">
+                <div class="flex justify-end">
+                  <i class="material-icons pointer" (click)="copyExSample2.copy()">content_copy</i>
+                </div>
+                <pre ngxCopy #copyExSample2="copy"><code>{{ sample2 }}</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="font-bold mb-4 text-center">String - shorten</div>
+          <div class="mb-4 text-center">Shortening a string by length and providing a custom string to denote an omission.</div>
+          <div class="flex items-start justify-start gap-6 mb-6">
+            <div class="w-1/2">
+              <div class="divider"></div>
+              <div class="flex flex-col items-start ">
+                <div>{{'Hey foo bar' | shorten: 3: '...'}}</div>
+              </div>
+              <div class="divider"></div>
+            </div>
+            <div class="w-1/2">
+              <div class="code mt-2">
+                <div class="flex justify-end">
+                  <i class="material-icons pointer" (click)="copyExSample3.copy()">content_copy</i>
+                </div>
+                <pre ngxCopy #copyExSample3="copy"><code>{{ sample3 }}</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="font-bold mb-4 text-center">String - firstcase</div>
+          <div class="mb-4 text-center">Uppercase first letter of first word</div>
+          <div class="flex items-start justify-start gap-6 mb-6">
+            <div class="w-1/2">
+              <div class="divider"></div>
+              <div class="flex flex-col items-start ">
+                <div>{{'foo bar' | firstcase }}</div>
+              </div>
+              <div class="divider"></div>
+            </div>
+            <div class="w-1/2">
+              <div class="code mt-2">
+                <div class="flex justify-end">
+                  <i class="material-icons pointer" (click)="copyExSample4.copy()">content_copy</i>
+                </div>
+                <pre ngxCopy #copyExSample4="copy"><code>{{ sample4 }}</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="font-bold mb-4 text-center">String - titlecase</div>
+          <div class="mb-4 text-center">Uppercase first letter every word</div>
+          <div class="flex items-start justify-start gap-6 mb-6">
+            <div class="w-1/2">
+              <div class="divider"></div>
+              <div class="flex flex-col items-start ">
+                <div>{{"shaquille o'neal" | titlecase }}</div>
+              </div>
+              <div class="divider"></div>
+            </div>
+            <div class="w-1/2">
+              <div class="code mt-2">
+                <div class="flex justify-end">
+                  <i class="material-icons pointer" (click)="copyExSample5.copy()">content_copy</i>
+                </div>
+                <pre ngxCopy #copyExSample5="copy"><code>{{ sample5 }}</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="font-bold mb-4 text-center">String - titlecase</div>
+          <div class="mb-4 text-center">Uppercase first letter every word</div>
+          <div class="flex items-start justify-start gap-6 mb-6">
+            <div class="w-1/2">
+              <div class="divider"></div>
+              <div class="flex flex-col items-start ">
+                <div>{{'Foo' | prefixsuffix: 'nice prefix ': ' and awesome suffix!'}}</div>
+              </div>
+              <div class="divider"></div>
+            </div>
+            <div class="w-1/2">
+              <div class="code mt-2">
+                <div class="flex justify-end">
+                  <i class="material-icons pointer" (click)="copyExSample6.copy()">content_copy</i>
+                </div>
+                <pre ngxCopy #copyExSample6="copy"><code>{{ sample6 }}</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="font-bold mb-4 text-center">Array - range</div>
+          <div class="mb-4 text-center">Returns an array with range of numbers</div>
+          <div class="flex items-start justify-start gap-6 mb-6">
+            <div class="w-1/2">
+              <div class="divider"></div>
+              <div class="flex flex-col items-start ">
+                <div><li *ngFor="let item of 1 | range: 6 ">{{ item }}</li></div>
+              </div>
+              <div class="divider"></div>
+            </div>
+            <div class="w-1/2">
+              <div class="code mt-2">
+                <div class="flex justify-end">
+                  <i class="material-icons pointer" (click)="copyExSample7.copy()">content_copy</i>
+                </div>
+                <pre ngxCopy #copyExSample7="copy"><code>{{ sample7 }}</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="font-bold mb-4 text-center">Array - reverse</div>
+          <div class="mb-4 text-center">Reverses an array</div>
+          <div class="flex items-start justify-start gap-6 mb-6">
+            <div class="w-1/2">
+              <div class="divider"></div>
+              <div class="flex flex-col items-start ">
+                <div><li *ngFor="let item of items | reverse">{{ item }}</li></div>
+              </div>
+              <div class="divider"></div>
+            </div>
+            <div class="w-1/2">
+              <div class="code mt-2">
+                <div class="flex justify-end">
+                  <i class="material-icons pointer" (click)="copyExSample8.copy()">content_copy</i>
+                </div>
+                <pre ngxCopy #copyExSample8="copy"><code>{{ sample8 }}</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="font-bold mb-4 text-center">Array - unique</div>
+          <div class="mb-4 text-center">Removes duplicates from array</div>
+          <div class="flex items-start justify-start gap-6 mb-6">
+            <div class="w-1/2">
+              <div class="divider"></div>
+              <div class="flex flex-col items-start ">
+                <div><li *ngFor="let item of items | unique">{{ item }}</li></div>
+              </div>
+              <div class="divider"></div>
+            </div>
+            <div class="w-1/2">
+              <div class="code mt-2">
+                <div class="flex justify-end">
+                  <i class="material-icons pointer" (click)="copyExSample9.copy()">content_copy</i>
+                </div>
+                <pre ngxCopy #copyExSample9="copy"><code>{{ sample9 }}</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="font-bold mb-4 text-center">Array - filterBy</div>
+          <div class="mb-4 text-center">Returns object array of grouped by items by discriminator</div>
+          <div class="flex items-start justify-start gap-6 mb-6">
+            <div class="w-1/2">
+              <div class="divider"></div>
+              <div class="flex flex-col items-start ">
+                <div><li *ngFor="let item of users | filterBy: ['id']: 1">{{ item.first_name }}</li></div>
+                <br>
+                <div><li *ngFor="let item of users | filterBy: ['work.company']: 'Bar Tech'">{{ item.first_name }}</li></div>
+              </div>
+              <div class="divider"></div>
+            </div>
+            <div class="w-1/2">
+              <div class="code mt-2">
+                <div class="flex justify-end">
+                  <i class="material-icons pointer" (click)="copyExSample10.copy()">content_copy</i>
+                </div>
+                <pre ngxCopy #copyExSample10="copy"><code>{{ sample10 }}</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="font-bold mb-4 text-center">Array - orderBy</div>
+          <div class="mb-4 text-center">Returns ordered array by configuration </div>
+          <div class="flex items-start justify-start gap-6 mb-6">
+            <div class="w-1/2">
+              <div class="divider"></div>
+              <div class="flex flex-col items-start">
+                <li *ngFor="let item of deepObj | orderBy: 'amount' ">{{ item.name }} - {{ item.amount }}</li>
+                <br>
+                <li *ngFor="let item of deepObj | orderBy: 'deep.prop'">{{ item.name }} - {{ item.deep.prop}}</li>
+              </div>
+              <div class="divider"></div>
+            </div>
+            <div class="w-1/2">
+              <div class="code mt-2">
+                <div class="flex justify-end">
+                  <i class="material-icons pointer" (click)="copyExSample11.copy()">content_copy</i>
+                </div>
+                <pre ngxCopy #copyExSample11="copy"><code>{{ sample11 }}</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section>
+          <div class="font-bold mb-2 text-center">Math - min</div>
+          <div class="mb-4 text-center">Returns the minimum of a given array</div>
+          <div class="flex items-start justify-start gap-6 mb-6">
+            <div class="w-1/2">
+              <div class="divider"></div>
+              <div class="flex flex-col items-start ">
+                <div>{{ [1, 2, 3, 1, 2, 3] | min }}</div>
+              </div>
+              <div class="divider"></div>
+            </div>
+            <div class="w-1/2">
+              <div class="code mt-2">
+                <div class="flex justify-end">
+                  <i class="material-icons pointer" (click)="copyExSample12.copy()">content_copy</i>
+                </div>
+                <pre ngxCopy #copyExSample12="copy"><code>{{ sample12 }}</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section>
+          <div class="font-bold mb-2 text-center">Math - max</div>
+          <div class="mb-4 text-center">Returns the maximum of a given array</div>
+          <div class="flex items-start justify-start gap-6 mb-6">
+            <div class="w-1/2">
+              <div class="divider"></div>
+              <div class="flex flex-col items-start ">
+                <div>{{ [1, 2, 3, 1, 2, 3] | max }}</div>
+              </div>
+              <div class="divider"></div>
+            </div>
+            <div class="w-1/2">
+              <div class="code mt-2">
+                <div class="flex justify-end">
+                  <i class="material-icons pointer" (click)="copyExSample13.copy()">content_copy</i>
+                </div>
+                <pre ngxCopy #copyExSample13="copy"><code>{{ sample13 }}</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section>
+          <div class="font-bold mb-2 text-center">Math - sum</div>
+          <div class="mb-4 text-center">Returns the sum of a given arrayy</div>
+          <div class="flex items-start justify-start gap-6 mb-6">
+            <div class="w-1/2">
+              <div class="divider"></div>
+              <div class="flex flex-col items-start ">
+                <div>{{ [1, 2, 3, 4] | sum }}</div>
+              </div>
+              <div class="divider"></div>
+            </div>
+            <div class="w-1/2">
+              <div class="code mt-2">
+                <div class="flex justify-end">
+                  <i class="material-icons pointer" (click)="copyExSample14.copy()">content_copy</i>
+                </div>
+                <pre ngxCopy #copyExSample14="copy"><code>{{ sample14 }}</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section>
+          <div class="font-bold mb-2 text-center">Math - average</div>
+          <div class="mb-4 text-center">Returns the average of a given array</div>
+          <div class="flex items-start justify-start gap-6 mb-6">
+            <div class="w-1/2">
+              <div class="divider"></div>
+              <div class="flex flex-col items-start ">
+                <div>{{ [1, 2, 3] | average }}</div>
+              </div>
+              <div class="divider"></div>
+            </div>
+            <div class="w-1/2">
+              <div class="code mt-2">
+                <div class="flex justify-end">
+                  <i class="material-icons pointer" (click)="copyExSample15.copy()">content_copy</i>
+                </div>
+                <pre ngxCopy #copyExSample15="copy"><code>{{ sample15 }}</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section>
+          <div class="font-bold mb-2 text-center">Math - precision</div>
+          <div class="mb-4 text-center">Returns the average of a given array</div>
+          <div class="flex items-start justify-start gap-6 mb-6">
+            <div class="w-1/2">
+              <div class="divider"></div>
+              <div class="flex flex-col items-start ">
+                <div>{{ 42.123 | precision: 2 }}</div>
+              </div>
+              <div class="divider"></div>
+            </div>
+            <div class="w-1/2">
+              <div class="code mt-2">
+                <div class="flex justify-end">
+                  <i class="material-icons pointer" (click)="copyExSample16.copy()">content_copy</i>
+                </div>
+                <pre ngxCopy #copyExSample16="copy"><code>{{ sample16 }}</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section>
+          <div class="font-bold mb-2 text-center">Math - bytes</div>
+          <div class="mb-4 text-center">Returns bytes with a unit symbol</div>
+          <div class="flex items-start justify-start gap-6 mb-6">
+            <div class="w-1/2">
+              <div class="divider"></div>
+              <div class="flex flex-col items-start ">
+                <div>{{ 1.0995116e12 | bytes }}</div>
+              </div>
+              <div class="divider"></div>
+            </div>
+            <div class="w-1/2">
+              <div class="code mt-2">
+                <div class="flex justify-end">
+                  <i class="material-icons pointer" (click)="copyExSample17.copy()">content_copy</i>
+                </div>
+                <pre ngxCopy #copyExSample17="copy"><code>{{ sample17 }}</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+    </div>
+</div>

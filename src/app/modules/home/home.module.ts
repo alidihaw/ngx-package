@@ -3,7 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 
-import { ButtonModule } from '@components/button/button.module';
+import { FormsModule } from '@angular/forms';
+import { NgxPipesModule } from 'packages/ngx-pipes/src/public-api';
 
 const routes: Routes = [
     {
@@ -19,6 +20,8 @@ const routes: Routes = [
     imports: [
         RouterModule.forChild(routes),
         CommonModule,
+        FormsModule,
+        NgxPipesModule,
     ],
     exports: [],
     schemas: [

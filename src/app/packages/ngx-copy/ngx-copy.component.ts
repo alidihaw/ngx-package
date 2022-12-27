@@ -8,10 +8,10 @@ import { AppHelper } from 'src/app/app.helper';
     styleUrls: ['./ngx-copy.component.scss'],
     encapsulation: ViewEncapsulation.None,
 })
-export class PackageNgxCurrencyComponent implements OnInit {
+export class PackageNgxCopyComponent implements OnInit {
 
     input = 'Lorem ipsum dolor sit amet';
-    
+
     sample1 = `<div ngxCopy #copySample1="copy">
      <h4><b>Title</b></h4>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum augue at ante sollicitudin posuere. Pellentesque congue consequat enim quis luctus.

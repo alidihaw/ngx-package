@@ -7,7 +7,7 @@
 ## Support Me
 
 If you like this package I will be happy that you support me on Buy me a coffee :) <br />
-Buy me coffe: [https://www.buymeacoffee.com/alidihaw](https://www.buymeacoffee.com/alidihaw) <br />
+Buy me coffee: [https://www.buymeacoffee.com/alidihaw](https://www.buymeacoffee.com/alidihaw) <br />
 Indonesia People: [https://sociabuzz.com/dihaw](https://sociabuzz.com/dihaw)
 
 ## List Packages
@@ -24,6 +24,7 @@ Indonesia People: [https://sociabuzz.com/dihaw](https://sociabuzz.com/dihaw)
 - [ngx-country](https://npm.ngodings.com/packages/ngx-country)
 - [ngx-ip](https://npm.ngodings.com/packages/ngx-ip)
 - [ngx-interceptor](https://www.npmjs.com/package/@ngodings/ngx-interceptor)
+- [ngx-pipes](https://www.npmjs.com/package/@ngodings/ngx-pipes)
 
 ## License
 

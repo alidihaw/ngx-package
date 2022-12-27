@@ -11,10 +11,13 @@
         {{ appData.version }}
       </div>
     </div>
-    <div style="height: 35px"></div>
+    <div class="mb-6">
+      <input type="search" placeholder="Search" [(ngModel)]="search">
+    </div>
+    <div style="height: 20px"></div>
 
     <div class="grid grid-cols-4 gap-6 mb-10">
-        <ng-container *ngFor="let item of packages">
+        <ng-container *ngFor="let item of packages | filterBy: ['name'] : search">
             <div class="card-standard pointer card-hover" (click)="item?.type == 'url' ? appHelper.goToURL(item.url) : appHelper.goToLink(item.url)">
                 {{ item.name }}
             </div>

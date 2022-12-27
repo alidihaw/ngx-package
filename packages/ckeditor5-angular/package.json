@@ -1,8 +1,9 @@
 {
   "name": "@ngodings/ckeditor5-angular",
-  "version": "15.0.0",
+  "version": "15.0.9",
   "description": "Ckeditor5 Angular with Latest Version",
   "keywords": [
+    "ngx",
     "wysiwyg",
     "rich text",
     "editor",
@@ -17,7 +18,9 @@
     "component",
     "ckeditor",
     "ckeditor5",
-    "ckeditor 5"
+    "ckeditor 5",
+    "@ngodings",
+    "ngodings"
   ],
   "peerDependencies": {
     "@angular/common": "^15.0.0",

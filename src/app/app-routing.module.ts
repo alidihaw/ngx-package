@@ -27,7 +27,7 @@ const routes: Routes = [
       {
         path: 'ngx-copy',
         loadChildren: () =>
-          import('./packages/ngx-copy/ngx-copy.module').then((m) => m.PackageNgxCurrencyModule),
+          import('./packages/ngx-copy/ngx-copy.module').then((m) => m.PackageNgxCopyModule),
         canActivate: []
       },
       {
@@ -76,6 +76,12 @@ const routes: Routes = [
         path: 'ngx-editor',
         loadChildren: () =>
           import('./packages/ngx-editor/ngx-editor.module').then((m) => m.PackageNgxEditorModule),
+        canActivate: []
+      },
+      {
+        path: 'ngx-pipes',
+        loadChildren: () =>
+          import('./packages/ngx-pipes/ngx-pipes.module').then((m) => m.PackageNgxPipesModule),
         canActivate: []
       },
     ]
