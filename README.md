@@ -23,6 +23,7 @@ Indonesia People: [https://sociabuzz.com/dihaw](https://sociabuzz.com/dihaw)
 - [ngx-rupiah](https://npm.ngodings.com/packages/ngx-rupiah)
 - [ngx-country](https://npm.ngodings.com/packages/ngx-country)
 - [ngx-ip](https://npm.ngodings.com/packages/ngx-ip)
+- [ngx-interceptor](https://www.npmjs.com/package/@ngodings/ngx-interceptor)
 
 ## License
 

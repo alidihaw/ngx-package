@@ -14,50 +14,66 @@ export class HomeComponent implements OnInit {
     color = ColorStandard;
     size = SizeStandard;
 
-    packages: { name: string, url: string }[] = [
+    packages: { name: string, url: string, type: string }[] = [
         {
             name: 'ngx-timezone',
-            url: 'packages/ngx-timezone'
+            url: 'packages/ngx-timezone',
+            type: 'url',
         },
         {
             name: 'ngx-editor',
-            url: 'packages/ngx-editor'
+            url: 'packages/ngx-editor',
+            type: 'url',
         },
         {
             name: 'ngx-whatsapp',
-            url: 'packages/ngx-whatsapp'
+            url: 'packages/ngx-whatsapp',
+            type: 'url',
         },
         {
             name: 'ngx-copy',
-            url: 'packages/ngx-copy'
+            url: 'packages/ngx-copy',
+            type: 'url',
         },
         {
             name: 'ngx-device',
-            url: 'packages/ngx-device'
+            url: 'packages/ngx-device',
+            type: 'url',
         },
         {
             name: 'ngx-scroll-to-top',
-            url: 'packages/ngx-scroll-to-top'
+            url: 'packages/ngx-scroll-to-top',
+            type: 'url',
         },
         {
             name: 'ngx-image-tagger',
-            url: 'packages/ngx-image-tagger'
+            url: 'packages/ngx-image-tagger',
+            type: 'url',
         },
         {
             name: 'ngx-currency',
-            url: 'packages/ngx-currency'
+            url: 'packages/ngx-currency',
+            type: 'url',
         },
         {
             name: 'ngx-rupiah',
-            url: 'packages/ngx-rupiah'
+            url: 'packages/ngx-rupiah',
+            type: 'url',
         },
         {
             name: 'ngx-country',
-            url: 'packages/ngx-country'
+            url: 'packages/ngx-country',
+            type: 'url',
         },
         {
             name: 'ngx-ip',
-            url: 'packages/ngx-ip'
+            url: 'packages/ngx-ip',
+            type: 'url',
+        },
+        {
+            name: 'ngx-interceptor',
+            url: 'https://www.npmjs.com/package/@ngodings/ngx-interceptor',
+            type: 'link',
         },
     ]
     constructor(public appHelper: AppHelper, public appData: AppData,) {

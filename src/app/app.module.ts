@@ -11,6 +11,8 @@ import { FormsModule } from '@angular/forms';
 import { ServiceWorkerModule } from '@angular/service-worker';
 
 import { environment } from '@environments/environment';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { NgxHttpErrorInterceptor, NgxHttpHeaderInterceptor } from 'packages/ngx-interceptor/src/public-api';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,10 @@ import { environment } from '@environments/environment';
       // registrationStrategy: 'registerWhenStable:30000'
     }),
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: NgxHttpHeaderInterceptor, multi: true },
+    { provide: HTTP_INTERCEPTORS, useClass: NgxHttpErrorInterceptor, multi: true },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

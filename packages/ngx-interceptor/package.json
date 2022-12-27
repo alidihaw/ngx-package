@@ -1,0 +1,31 @@
+{
+  "name": "@ngodings/ngx-interceptor",
+  "description": "Angular HTTP Interceptor for Error Handling & Header Authorization",
+  "version": "15.0.0",
+  "peerDependencies": {
+    "@angular/common": "^15.0.0",
+    "@angular/core": "^15.0.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "homepage": "https://npm.ngodings.com/packages/ngx-interceptor",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alidihaw/ngodings/tree/master/packages/ngx-interceptor"
+  },
+  "keywords": [
+    "angular",
+    "angular2",
+    "angular4",
+    "angular9",
+    "angular15",
+    "currency",
+    "mask",
+    "model",
+    "money",
+    "ngx",
+    "number"
+  ]
+}

@@ -371,6 +371,29 @@
           "defaultConfiguration": "production"
         }
       }
+    },
+    "ngx-interceptor": {
+      "projectType": "library",
+      "root": "packages/ngx-interceptor",
+      "sourceRoot": "packages/ngx-interceptor/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "packages/ngx-interceptor/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "packages/ngx-interceptor/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "packages/ngx-interceptor/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        }
+      }
     }
   }
 }
