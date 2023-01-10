@@ -13,6 +13,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '@environments/environment';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgxHttpErrorInterceptor, NgxHttpHeaderInterceptor } from 'packages/ngx-interceptor/src/public-api';
+import { SplashScreenModule } from '@providers/splash-screen';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,8 @@ import { NgxHttpErrorInterceptor, NgxHttpHeaderInterceptor } from 'packages/ngx-
       registrationStrategy: 'registerImmediately',
       // registrationStrategy: 'registerWhenStable:30000'
     }),
+
+    SplashScreenModule,
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: NgxHttpHeaderInterceptor, multi: true },
